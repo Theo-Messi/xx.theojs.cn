@@ -31,6 +31,9 @@ devDependencies:
   flexsearch:
     specifier: ^0.7.31
     version: 0.7.31
+  prettier:
+    specifier: 3.0.3
+    version: 3.0.3
   vitepress:
     specifier: 1.0.0-rc.22
     version: 1.0.0-rc.22(@algolia/client-search@4.20.0)(@types/node@20.8.7)(search-insights@2.9.0)
@@ -958,6 +961,12 @@ packages:
 
   /preact@10.18.1:
     resolution: {integrity: sha512-mKUD7RRkQQM6s7Rkmi7IFkoEHjuFqRQUaXamO61E6Nn7vqF/bo7EZCmSyrUnp2UWHw0O7XjZ2eeXis+m7tf4lg==}
+    dev: true
+
+  /prettier@3.0.3:
+    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /queue-microtask@1.2.3:

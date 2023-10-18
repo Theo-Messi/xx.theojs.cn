@@ -16,11 +16,34 @@ hero:
       text: 提交书籍与纠错
       link: /提交书籍与纠错
 
-    # - theme: brand
-    #   text: 文档记录
-    #   link: /skill/JL-01
-
     - theme: sponsor
       text: 赞助
       link: https://github.com/sponsors/vanhiupun
+
+features:
+  - title: 山
+    link: 山/博山篇
+    linkText: 查看书籍
+
+  - title: 医
+    link: 医/八段锦
+    linkText: 查看书籍
+  - title: 命
+    link: 命/八字案例分析
+    linkText: 查看书籍
+  - title: 相
+    link: 相/冰鉴
+    linkText: 查看书籍
+  - title: 卜
+    link: 卜/毕法赋
+    linkText: 查看书籍
+  - title: 灵宠
+    link: 灵宠/宠物篇
+    linkText: 查看书籍
+  - title: 相关经典
+    link: 相关经典/道德经
+    linkText: 查看书籍
+  - title: 提交书籍与纠错
+    link: 提交书籍与纠错
+    linkText: 提交书籍
 ---
