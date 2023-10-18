@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "flexsearch": "^0.7.31",
     "prettier": "3.0.3",
     "vitepress": "1.0.0-rc.22"
   },
@@ -12,10 +11,6 @@
   "dependencies": {
     "@types/node": "^20.8.7",
     "@vercel/analytics": "^1.1.1",
-    "medium-zoom": "^1.0.8",
-    "pagefind": "^1.0.3",
-    "vite": "^4.5.0",
-    "vitepress-plugin-pagefind": "^0.2.10",
     "vue": "^3.3.4"
   }
 }
