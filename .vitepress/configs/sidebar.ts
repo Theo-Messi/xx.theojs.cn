@@ -143,7 +143,16 @@ export function Sideyi() {
             }
           ]
         },
-        { text: '太极拳', link: '太极拳' },
+        {
+          text: '太极拳',
+          collapsed: true,
+          items: [
+            { text: '24式太极拳', link: '24式太极拳' },
+            { text: '42式太极拳', link: '42式太极拳' },
+            { text: '48式太极拳', link: '48式太极拳' },
+            { text: '88式太极拳', link: '88式太极拳' }
+          ]
+        },
         { text: '汤头歌诀', link: '汤头歌诀' },
         { text: '铜人针灸经', link: '铜人针灸经' },
         { text: '温病条辨', link: '温病条辨' },
