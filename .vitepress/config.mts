@@ -1,7 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head } from './configs'
+import { SearchPlugin } from 'vitepress-plugin-search'
 
 export default defineConfig({
+  vite: {
+    plugins: [SearchPlugin()]
+  },
+
   // 站点名称
   title: '玄学宝典',
 
