@@ -2,18 +2,18 @@ import type { DefaultTheme } from 'vitepress'
 
 // 侧边栏配置
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  '/山/': { base: '/山/', items: Sideshan() },
-  '/医/': { base: '/医/', items: Sideyi() },
-  '/命/': { base: '/命/', items: Sideming() },
-  '/相/': { base: '/相/', items: Sidexiang() },
-  '/卜/': { base: '/卜/', items: Sidebo() },
-  '/灵宠/': { base: '/灵宠/', items: Sidelc() },
-  '/相关经典/': { base: '/相关经典/', items: Sidejd() },
-  '/': { base: '/', items: Sidetj() }
+  '/山/': { base: '/山/', items: Side_Shan() },
+  '/医/': { base: '/医/', items: Side_Yi() },
+  '/命/': { base: '/命/', items: Side_Ming() },
+  '/相/': { base: '/相/', items: Side_Xiang() },
+  '/卜/': { base: '/卜/', items: Side_Bo() },
+  '/灵宠/': { base: '/灵宠/', items: Side_Lc() },
+  '/相关经典/': { base: '/相关经典/', items: Side_Jd() },
+  '/': { base: '/', items: Side_Pr() }
 }
 
 // 山
-export function Sideshan() {
+export function Side_Shan() {
   return [
     {
       // text: '山篇',
@@ -45,7 +45,7 @@ export function Sideshan() {
 }
 
 // 医
-export function Sideyi() {
+export function Side_Yi() {
   return [
     {
       // text: '医篇',
@@ -201,7 +201,7 @@ export function Sideyi() {
 }
 
 // 命
-export function Sideming() {
+export function Side_Ming() {
   return [
     {
       // text: '命篇',
@@ -303,7 +303,7 @@ export function Sideming() {
   ]
 }
 // --------------------------相篇--------------------------
-export function Sidexiang() {
+export function Side_Xiang() {
   return [
     {
       // text: '相篇',
@@ -325,7 +325,7 @@ export function Sidexiang() {
 }
 
 // --------------------------卜篇--------------------------
-export function Sidebo() {
+export function Side_Bo() {
   return [
     {
       // text: '卜篇',
@@ -507,7 +507,7 @@ export function Sidebo() {
   ]
 }
 // 相关经典
-export function Sidejd() {
+export function Side_Jd() {
   return [
     {
       // text: '相关经典',
@@ -529,7 +529,7 @@ export function Sidejd() {
   ]
 }
 // 提交书籍与纠错
-export function Sidetj() {
+export function Side_Pr() {
   return [
     {
       // text: '提交书籍与纠错',
@@ -540,7 +540,7 @@ export function Sidetj() {
   ]
 }
 // 灵宠
-export function Sidelc() {
+export function Side_Lc() {
   return [
     {
       // text: '灵宠',
