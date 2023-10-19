@@ -3,6 +3,7 @@ import { nav, sidebar, head } from './configs'
 import { SearchPlugin } from 'vitepress-plugin-search'
 
 export default defineConfig({
+  // 插件
   vite: {
     plugins: [SearchPlugin()]
   },
@@ -54,6 +55,7 @@ export default defineConfig({
   //   }
   // },
 
+  // 主题配置
   themeConfig: {
     // // logo
     logo: 'https://theovan.xyz/avatar.png',

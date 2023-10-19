@@ -1,7 +1,9 @@
 import type { DefaultTheme } from 'vitepress'
 // 导航栏设置
 
+// 导出导航栏配置
 export const nav: DefaultTheme.Config['nav'] = [
+  // 导航栏设置
   { text: '山', link: '山/博山篇', activeMatch: '/山/' },
   { text: '医', link: '医/八段锦', activeMatch: '/医/' },
   { text: '命', link: '命/八字案例分析', activeMatch: '/命/' },
