@@ -18,7 +18,7 @@ hero:
 
     - theme: sponsor
       text: 赞助
-      link: https://github.com/sponsors/vanhiupun
+      link: https://github.com/sponsors/Theo-messi
 
 features:
   - title: 山

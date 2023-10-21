@@ -16,5 +16,5 @@ export const nav: DefaultTheme.Config['nav'] = [
     link: '提交书籍与纠错',
     activeMatch: '/提交书籍与纠错/'
   },
-  { text: '赞助', link: 'https://github.com/sponsors/vanhiupun' }
+  { text: '赞助', link: 'https://github.com/sponsors/Theo-messi' }
 ]
