@@ -13,6 +13,6 @@
   "dependencies": {
     "@types/node": "^20.8.7",
     "@vercel/analytics": "^1.1.1",
-    "vue": "^3.3.4"
+    "vue": "^3.3.6"
   }
 }
