@@ -11,7 +11,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@types/node": "^20.8.8",
+    "@types/node": "^20.8.9",
     "@vercel/analytics": "^1.1.1",
     "vue": "^3.3.7"
   }
