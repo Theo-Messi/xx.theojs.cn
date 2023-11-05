@@ -17,11 +17,11 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   vitepress:
-    specifier: 1.0.0-rc.24
-    version: 1.0.0-rc.24(@algolia/client-search@4.20.0)(search-insights@2.9.0)
+    specifier: 1.0.0-rc.25
+    version: 1.0.0-rc.25(@algolia/client-search@4.20.0)(search-insights@2.9.0)
   vitepress-plugin-search:
     specifier: 1.0.4-alpha.20
-    version: 1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.24)(vue@3.3.7)
+    version: 1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.25)(vue@3.3.7)
 
 packages:
 
@@ -879,7 +879,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress-plugin-search@1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.24)(vue@3.3.7):
+  /vitepress-plugin-search@1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.25)(vue@3.3.7):
     resolution: {integrity: sha512-zG+ev9pw1Mg7htABlFCNXb8XwnKN+qfTKw+vU0Ers6RIrABx+45EAAFBoaL1mEpl1FRFn1o/dQ7F4b8GP6HdGQ==}
     engines: {node: ^14.13.1 || ^16.7.0 || >=18}
     peerDependencies:
@@ -892,12 +892,12 @@ packages:
       flexsearch: 0.7.31
       glob-to-regexp: 0.4.1
       markdown-it: 13.0.2
-      vitepress: 1.0.0-rc.24(@algolia/client-search@4.20.0)(search-insights@2.9.0)
+      vitepress: 1.0.0-rc.25(@algolia/client-search@4.20.0)(search-insights@2.9.0)
       vue: 3.3.7
     dev: true
 
-  /vitepress@1.0.0-rc.24(@algolia/client-search@4.20.0)(search-insights@2.9.0):
-    resolution: {integrity: sha512-RpnL8cnOGwiRlBbrYQUm9sYkJbtyOt/wYXk2diTcokY4yvks/5lq9LuSt+MURWB6ZqwpSNHvTmxgaSfLoG0/OA==}
+  /vitepress@1.0.0-rc.25(@algolia/client-search@4.20.0)(search-insights@2.9.0):
+    resolution: {integrity: sha512-1dqWiHNThNrVZ08ixmfEDBEH+764KOgnev9oXga/x6cN++Vb9pnuu8p3K6DQP+KZrYcG+WiX7jxal0iSNpAWuQ==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4.3.2
