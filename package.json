@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "flexsearch": "^0.7.31",
-    "prettier": "3.0.3",
+    "prettier": "3.1.0",
     "vitepress": "1.0.0-rc.25",
     "vitepress-plugin-search": "1.0.4-alpha.20"
   },
