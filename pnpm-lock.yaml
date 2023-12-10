@@ -20,8 +20,8 @@ devDependencies:
     specifier: 1.0.0-rc.31
     version: 1.0.0-rc.31(@algolia/client-search@4.20.0)(search-insights@2.11.0)
   vitepress-plugin-search:
-    specifier: 1.0.4-alpha.20
-    version: 1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.31)(vue@3.3.11)
+    specifier: 1.0.4-alpha.21
+    version: 1.0.4-alpha.21(flexsearch@0.7.31)(vitepress@1.0.0-rc.31)(vue@3.3.11)
 
 packages:
 
@@ -1259,8 +1259,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress-plugin-search@1.0.4-alpha.20(flexsearch@0.7.31)(vitepress@1.0.0-rc.31)(vue@3.3.11):
-    resolution: {integrity: sha512-zG+ev9pw1Mg7htABlFCNXb8XwnKN+qfTKw+vU0Ers6RIrABx+45EAAFBoaL1mEpl1FRFn1o/dQ7F4b8GP6HdGQ==}
+  /vitepress-plugin-search@1.0.4-alpha.21(flexsearch@0.7.31)(vitepress@1.0.0-rc.31)(vue@3.3.11):
+    resolution: {integrity: sha512-UBkvbQtr3U8EpVWyuyd4FXAbx5I7GkKIGgObaM3BFIHCpLEjJrRZoifFQBdjZ7sZGM2OrjrgjA0W8gWKAiZ3qA==}
     engines: {node: ^14.13.1 || ^16.7.0 || >=18}
     peerDependencies:
       flexsearch: ^0.7.31
