@@ -307,7 +307,7 @@ export function Side_Xiang() {
   return [
     {
       // text: '相篇',
-      collapsed: true,
+      // collapsed: true,
       base: '/相/',
       items: [
         { text: '冰鉴', link: '冰鉴' },
