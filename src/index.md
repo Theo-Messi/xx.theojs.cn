@@ -6,7 +6,7 @@ hero:
   name: 玄学宝典
   text:
   # tagline: You don't have to be the same
-  image: https://theovan.xyz/home.png
+  image: https://theovan.xyz/index/home.png
   actions:
     - theme: brand
       text: 开始学习
