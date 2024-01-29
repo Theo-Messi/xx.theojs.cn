@@ -2,7 +2,7 @@
   "devDependencies": {
     "prettier": "3.2.4",
     "sass": "^1.70.0",
-    "vitepress": "1.0.0-rc.39"
+    "vitepress": "1.0.0-rc.40"
   },
   "scripts": {
     "dev": "vitepress dev",
