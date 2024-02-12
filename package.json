@@ -10,6 +10,6 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.1.2"
+    "@vercel/analytics": "^1.1.3"
   }
 }
