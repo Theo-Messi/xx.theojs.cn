@@ -43,7 +43,7 @@ export default defineConfig({
 
   // 站点地图
   // sitemap: {
-  //   hostname: 'https://theovan.xyz',
+  //   hostname: 'https://theovan.cn',
   //   transformItems(items) {
   //     return items.filter((item) => !item.url.includes('migration'))
   //   }
@@ -52,7 +52,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // // logo
-    logo: 'https://theovan.xyz/avatar.png',
+    logo: 'https://theovan.cn/avatar.png',
 
     // 社交链接
     socialLinks: [{ icon: 'github', link: 'https://github.com/Theo-messi' }],
