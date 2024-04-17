@@ -6,7 +6,7 @@ hero:
   name: 玄学宝典
   text: Metaphysical Book
   tagline: 中华传统五术书籍传世经典著作 —— 山医命相卜
-  image: https://theovan.xyz/index/home.png
+  image: https://theovan.cn/index/home.png
   actions:
     - theme: brand
       text: 开始学习
