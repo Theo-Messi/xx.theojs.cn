@@ -42,12 +42,9 @@ export default defineConfig({
   // appearance: false,
 
   // 站点地图
-  // sitemap: {
-  //   hostname: 'https://theovan.cn',
-  //   transformItems(items) {
-  //     return items.filter((item) => !item.url.includes('migration'))
-  //   }
-  // },
+  sitemap: {
+    hostname: 'https://xx.theovan.cn'
+  },
 
   // 主题配置
   themeConfig: {
@@ -98,7 +95,7 @@ export default defineConfig({
     // 底部信息
     footer: {
       message: 'Released Under The MIT License.',
-      copyright:`Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo</a> . All Rights Reserved.`
+      copyright: `Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo</a> . All Rights Reserved.`
     }
   }
 })
