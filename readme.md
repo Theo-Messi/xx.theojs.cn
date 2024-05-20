@@ -29,16 +29,15 @@
 
 Windows
 
-```sh 
+```sh
 iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
+
 MacOS
 
-```sh 
+```sh
 brew install pnpm
 ```
-
-
 
 #### 安装项目依赖
 
@@ -46,15 +45,11 @@ brew install pnpm
 pnpm install
 ```
 
-
-
 ### 启动本地开发预览
 
 ```sh
 pnpm run dev
 ```
-
-
 
 ### 文章目录
 
@@ -63,8 +58,6 @@ pnpm run dev
 对应的就是`山篇、医篇、命篇、相篇、卜篇、相关经典`分类
 
 请将书籍放置到相应的目录下
-
-
 
 ### 提交格式
 
