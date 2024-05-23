@@ -23,6 +23,9 @@ importers:
       vitepress:
         specifier: 1.2.0
         version: 1.2.0(@algolia/client-search@4.23.3)(@types/node@20.12.12)(postcss@8.4.38)(sass@1.77.2)(search-insights@2.13.0)
+      vitepress-plugin-google-analytics:
+        specifier: 1.0.2
+        version: 1.0.2
 
 packages:
 
@@ -684,6 +687,9 @@ packages:
       terser:
         optional: true
 
+  vitepress-plugin-google-analytics@1.0.2:
+    resolution: {integrity: sha512-ri8bFUAmt3c/DtPrALauGBIUr2gIJ11c1qNRhwd3/+aiuYZBfQpOosSxcO1AswgwRxP9FwBS6Z7jgdDVyXb2hA==}
+
   vitepress@1.2.0:
     resolution: {integrity: sha512-m/4PAQVyPBvKHV7sFKwcmNmrsoSxdjnw/Eg40YyuBSaBHhrro9ubnfWk5GT0xGfE98LqjZkHCWKNJlR6G/7Ayg==}
     hasBin: true
@@ -1311,6 +1317,8 @@ snapshots:
       '@types/node': 20.12.12
       fsevents: 2.3.3
       sass: 1.77.2
+
+  vitepress-plugin-google-analytics@1.0.2: {}
 
   vitepress@1.2.0(@algolia/client-search@4.23.3)(@types/node@20.12.12)(postcss@8.4.38)(sass@1.77.2)(search-insights@2.13.0):
     dependencies:
