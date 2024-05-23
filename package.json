@@ -10,6 +10,7 @@
     "prettier": "3.2.5",
     "sass": "1.77.2",
     "vitepress": "1.2.0",
-    "@vercel/analytics": "1.2.2"
+    "@vercel/analytics": "1.2.2",
+    "vitepress-plugin-google-analytics": "1.0.2"
   }
 }
