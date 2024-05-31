@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { nav, sidebar, head } from './configs'
+import { nav, sidebar, head, socialLinks } from './configs'
 
 export default defineConfig({
   // 站点名称
@@ -38,8 +38,8 @@ export default defineConfig({
     }
   },
 
-  //true强制开启深色模式 false强制开启浅色模式
-  // appearance: false,
+  //'force-dark'强制开启深色模式 false强制开启浅色模式
+  appearance: 'force-dark',
 
   // 站点地图
   sitemap: {
@@ -49,18 +49,17 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // // logo
-    logo: 'https://theovan.cn/avatar.png',
+    logo: 'https://m.theovan.cn/avatar.png',
 
     // 社交链接
-    socialLinks: [{ icon: 'github', link: 'https://github.com/Theo-messi' }],
+    socialLinks,
 
     // false去除网站标题 只显示logo
     // siteTitle: false,
 
     // GitHub编辑页面
     editLink: {
-      pattern:
-        'https://github.com/Theo-messi/Metaphysical-Book/blob/main/src/:path',
+      pattern: 'https://github.com/Theo-messi/Metaphysical-Book/blob/main/src/:path',
       text: '为此页提供修改建议'
     },
 
@@ -94,8 +93,9 @@ export default defineConfig({
 
     // 底部信息
     footer: {
-      message: 'Released Under The MIT License.',
-      copyright: `Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo</a> . All Rights Reserved.`
+      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/Metaphysical-Book/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
+      copyright: `<font size="2">Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo-Messi</a></br>
+      <a href="https://111.com" target="_blank">鄂ICP备2022005864号-2</a>｜<a href="https://111.com" target="_blank">鄂公网安备12011202000677号</a></font size="2">`
     }
   }
 })
