@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
+import footnote_plugin from 'markdown-it-footnote'
 
 export default defineConfig({
   // 站点名称
@@ -35,6 +36,9 @@ export default defineConfig({
       dangerLabel: '危险',
       infoLabel: '信息',
       detailsLabel: '详细信息'
+    },
+    config: (md) => {
+      md.use(footnote_plugin)
     }
   },
 
