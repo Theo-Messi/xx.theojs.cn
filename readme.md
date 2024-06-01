@@ -1,17 +1,7 @@
-## 简介
-
-我本身对玄学就有极大的兴趣爱好,加上祖上也有一些手段传给我(当然不是什么神通)
-
-觉得可以收藏一些书籍,为日后学习钻研、查阅资料提供方便
-
-也希望对这方面有兴趣的朋友可以参考
-
-由于资料都是在网络中查找的 如果有什么错处可以帮我提出来 纠正错误 感激不尽
-
 ## 提交书籍
 
-1. [Fork](https://github.com/Theo-messi/Metaphysical-Book/fork) 我的仓库 并为我提出 [PR](https://github.com/Theo-messi/Metaphysical-Book/pulls)
-2. [请用邮件传送给我](mailto:fanxiaobin422@gmail.com)
+1. [Fork](https://github.com/Theo-messi/Metaphysical-Book/fork) 我的仓库 并为我提出 [Pull Request](https://github.com/Theo-messi/Metaphysical-Book/pulls)
+2. 或者 [请用邮件传送给我](mailto:fanxiaobin422@gmail.com)
 
 ## 纠正错误
 
@@ -27,13 +17,9 @@
 
 #### 安装 pnpm 包管理器
 
-Windows
-
 ```sh
 iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
-
-MacOS
 
 ```sh
 brew install pnpm
@@ -69,7 +55,6 @@ pnpm run dev
 ```md
 ---
 title: 道德经
-editLink: true
 ---
 
 ## 第 1 章
@@ -84,7 +69,8 @@ editLink: true
 按照如下格式进行配置
 
 ```ts
-// 灵宠
+// .vitepress/configs/sidebar.ts
+
 export function Sidelc() {
   return [
     {
@@ -100,15 +86,12 @@ export function Sidelc() {
 }
 ```
 
-:::tip
-
 - `text`:分类名称 (请勿修改)
 - `collapsed`: 打开下拉开关选项(请勿修改)
-- `base`: "/山/" (请勿修改)
+- `base`: 分类文件夹 (请勿修改)
 - `items`:该分类下的文件路径配置
-  :::
 
-#### 例子
+#### 例
 
 新上传书籍`《宅经》`
 分类为`山篇`
@@ -119,20 +102,18 @@ export function Sidelc() {
 配置如下:
 
 ```ts
-// 灵宠
-export function Sidelc() {
-  return [
-    {
-      // text: '灵宠',
-      // collapsed: true,
-      base: '/灵宠/',
-      items: [
-        { text: '宠物篇', link: '宠物篇' },
-        { text: '植物篇', link: '植物篇' } //[!code ++]
-      ]
-    }
-  ]
-}
+// 山篇
+return [
+  {
+    // text: '灵宠',
+    // collapsed: true,
+    base: '/山篇/',
+    items: [
+      { text: '宅经', link: '宅经' }, // [!code ++]
+      { text: '植物篇', link: '植物篇' }
+    ]
+  }
+]
 ```
 
 ### 检查是否显示
@@ -145,4 +126,14 @@ pnpm run dev
 
 ok 现在就可以看到提交的书籍在侧边栏显示了
 
-### 提交 PR
+## 赞助
+
+[![Alipay](https://img.shields.io/badge/Alipay-3a3c3b?style=flat-square&logo=Alipay&labelColor=3a3c3b)](https://m.theovan.cn/docs/202405201752089.jpg)
+[![Wechat](https://img.shields.io/badge/Wechat-3a3c3b?style=flat-square&logo=Wechat&labelColor=3a3c3b)](https://m.theovan.cn/docs/202405201752087.jpg)
+[![github](https://img.shields.io/badge/Github-Sponsors-3a3c3b?style=flat-square&logo=githubsponsors&labelColor=3a3c3b)](https://github.com/sponsors/Theo-messi)
+
+<img width="360" src="https://m.theovan.cn/docs/202405201759098.jpg" alt='Sponsors'></a>
+
+## 贡献
+
+欢迎提交 issue 和 pull request，共同维护和更新文档。
