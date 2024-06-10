@@ -11,7 +11,7 @@
     "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.3.0",
     "sass": "^1.77.4",
-    "vitepress": "^1.2.2",
+    "vitepress": "^1.2.3",
     "vitepress-plugin-google-analytics": "^1.0.2",
     "vue": "^3.4.27"
   }

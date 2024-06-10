@@ -21,8 +21,8 @@ dependencies:
     specifier: ^1.77.4
     version: 1.77.4
   vitepress:
-    specifier: ^1.2.2
-    version: 1.2.2(@algolia/client-search@4.23.3)(@types/node@20.14.2)(sass@1.77.4)(search-insights@2.14.0)
+    specifier: ^1.2.3
+    version: 1.2.3(@algolia/client-search@4.23.3)(@types/node@20.14.2)(sass@1.77.4)(search-insights@2.14.0)
   vitepress-plugin-google-analytics:
     specifier: ^1.0.2
     version: 1.0.2
@@ -1195,8 +1195,8 @@ packages:
     resolution: {integrity: sha512-ri8bFUAmt3c/DtPrALauGBIUr2gIJ11c1qNRhwd3/+aiuYZBfQpOosSxcO1AswgwRxP9FwBS6Z7jgdDVyXb2hA==}
     dev: false
 
-  /vitepress@1.2.2(@algolia/client-search@4.23.3)(@types/node@20.14.2)(sass@1.77.4)(search-insights@2.14.0):
-    resolution: {integrity: sha512-uZ3nXR5NY4nYj3RJWCo5jev9qlNZAQo5SUXu1U0QSUx84cUm/o7hCTDVjZ4njVSVui+PsV1oAbdQOg8ygbaf4w==}
+  /vitepress@1.2.3(@algolia/client-search@4.23.3)(@types/node@20.14.2)(sass@1.77.4)(search-insights@2.14.0):
+    resolution: {integrity: sha512-GvEsrEeNLiDE1+fuwDAYJCYLNZDAna+EtnXlPajhv/MYeTjbNK6Bvyg6NoTdO1sbwuQJ0vuJR99bOlH53bo6lg==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
