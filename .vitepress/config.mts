@@ -1,34 +1,37 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
 import footnote_plugin from 'markdown-it-footnote'
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 export default defineConfig({
   // 站点名称
   title: '玄学宝典',
 
   // 站点语言
-  lang: 'cn',
+  lang: 'zh-CN',
 
   // 网站头部
   head,
 
   // 站点介绍
-  description: '',
+  description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
 
-  // 上次更新时间戳
-  lastUpdated: true,
+  //'force-dark'强制开启深色模式 false强制开启浅色模式
+  appearance: 'force-dark',
 
-  // 开启后网址后缀无'html'
-  cleanUrls: true,
-
-  // 源目录
-  srcDir: 'src',
+  // 站点地图
+  sitemap: {
+    hostname: 'https://xx.theovan.cn'
+  },
 
   // markdown-it插件配置
   markdown: {
     theme: {
-      light: 'github-light',
-      dark: 'github-dark-dimmed'
+      light: 'catppuccin-latte',
+      dark: 'dracula-soft'
     },
     container: {
       tipLabel: '提示',
@@ -42,18 +45,30 @@ export default defineConfig({
     }
   },
 
-  //'force-dark'强制开启深色模式 false强制开启浅色模式
-  appearance: 'force-dark',
-
-  // 站点地图
-  sitemap: {
-    hostname: 'https://xx.theovan.cn'
+  // 插件配置
+  vite: {
+    plugins: [
+      GitChangelog({
+        // 填写在此处填写您的仓库链接
+        repoURL: () => 'https://github.com/Theo-messi/xx.theovan.cn'
+      }),
+      GitChangelogMarkdownSection()
+    ]
   },
+
+  // 源目录
+  srcDir: 'src',
+
+  // 上次更新时间戳
+  lastUpdated: true,
+
+  // 开启后网址后缀无'html'
+  cleanUrls: true,
 
   // 主题配置
   themeConfig: {
     // // logo
-    logo: 'https://m.theovan.cn/avatar.png',
+    logo: { src: 'https://m.theovan.cn/avatar.png', width: 24, height: 24 },
 
     // 社交链接
     socialLinks,
@@ -63,7 +78,8 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern: 'https://github.com/Theo-messi/Metaphysical-Book/blob/main/src/:path',
+      pattern:
+        'https://github.com/Theo-messi/xx.theovan.cn/blob/main/src/:path',
       text: '为此页提供修改建议'
     },
 
@@ -72,7 +88,14 @@ export default defineConfig({
     outlineTitle: '本页目录', // 目录文本
 
     // 上次更新
-    lastUpdated: { text: '上次更新' },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'full',
+        hourCycle: 'h24'
+      }
+    },
 
     // 文章翻页
     docFooter: {
@@ -80,14 +103,21 @@ export default defineConfig({
       next: '下一篇'
     },
 
-    // 移动端 - 外观
-    darkModeSwitchLabel: '外观',
-
     // 移动端 - 返回顶部
     returnToTopLabel: '返回顶部',
 
     // 移动端 - menu
     sidebarMenuLabel: '文章',
+
+    // 主题模式切换
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    darkModeSwitchLabel: '主题模式',
+
+    // markdown 外部链接图标
+    externalLinkIcon: true,
+    // 语言切换
+    langMenuLabel: '切换语言',
 
     // 导航栏
     nav,
@@ -97,7 +127,7 @@ export default defineConfig({
 
     // 底部信息
     footer: {
-      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/Metaphysical-Book/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
+      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/xx.theovan.cn/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
       copyright: `<font size="2">Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo-Messi</a></br>
       <a href="https://111.com" target="_blank">鄂ICP备2022005864号-2</a>｜<a href="https://111.com" target="_blank">鄂公网安备12011202000677号</a></font size="2">`
     }
