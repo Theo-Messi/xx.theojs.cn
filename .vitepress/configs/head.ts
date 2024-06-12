@@ -10,7 +10,7 @@ export const head: HeadConfig[] = [
   // 设置OG类型
   ['meta', { name: 'og:type', content: 'website' }],
   // 设置OG语言
-  ['meta', { name: 'og:locale', content: 'cn' }],
+  ['meta', { name: 'og:locale', content: 'zh-CN' }],
   // 设置OG站点名称
   ['meta', { name: 'og:site_name', content: '玄学宝典' }],
   // 设置OG图片
