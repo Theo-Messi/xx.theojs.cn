@@ -20,7 +20,7 @@ const asideSponsors = computed(() => {
     //     url: sponsor.href,
     //     img: sponsor.imgSrcLight
     //   }))
-    // }
+    // },
     // {
     //   size: 'xmini',
     //   items: sponsors.bronze.map((sponsor: Sponsor) => ({
@@ -35,15 +35,23 @@ const asideSponsors = computed(() => {
 
 <template>
   <VPDocAsideSponsors :data="asideSponsors" />
-
-  <a class="banner mp" href="https://github.com/sponsors/Theo-messi" target="_blank">
-    <img width="22" height="22" src="https://theovan.xyz/爱心.png" />
+  <a
+    class="banner mp"
+    href="https://fbinv01.fbaff.cc/auth/register?code=RZP3"
+    target="_blank"
+  >
+    <!-- <img
+      width="22"
+      height="22"
+      src="https://flyingbirdlimo.com/wp-content/uploads/2022/03/Flying-Bird-Logo-cropped.png"
+    /> -->
     <span>
-      <!-- <p class="extra-info">Sponsor for me</p> -->
-      <p class="heading">为我赞助</p>
-      <!-- <p class="extra-info">Sponsor now!</p> -->
+      <p class="Activity">FlyingBird 618活动来了</p>
+      <p class="extra">月付 85折 优惠码：2461885</p>
+      <p class="extra">年付 64折 优惠码：2461880</p>
     </span>
   </a>
+
   <a class="banner mp" href="https://theovan.cn/" target="_blank">
     <img width="22" height="22" src="https://m.theovan.cn/avatar.png" />
     <span>
@@ -53,19 +61,43 @@ const asideSponsors = computed(() => {
     </span>
   </a>
   <a class="banner mp" href="https://share.theovan.cn/" target="_blank">
-    <img width="22" height="22" src="https://m.theovan.cn/docs/202405101119004.png" />
+    <img
+      width="22"
+      height="22"
+      src="https://m.theovan.cn/docs/202405101119004.png"
+    />
     <span>
       <p class="extra-info">快速获取热门影视资源</p>
       <p class="heading">阿里云盘资源分享</p>
       <p class="extra-info">转存观看!</p>
     </span>
   </a>
-  <a class="banner mp" href="https://theovan.xyz/serve/sharing/Account-sharing-guide" target="_blank">
-    <img width="22" height="22" src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png" />
+  <a
+    class="banner mp"
+    href="https://theovan.xyz/serve/sharing/Account-sharing-guide"
+    target="_blank"
+  >
+    <img
+      width="22"
+      height="22"
+      src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png"
+    />
     <span>
       <p class="extra-info">流媒体账号合租</p>
       <p class="heading">流媒体帐号合租</p>
       <p class="extra-info">转存观看!</p>
+    </span>
+  </a>
+  <a
+    class="banner mp"
+    href="https://github.com/sponsors/Theo-messi"
+    target="_blank"
+  >
+    <img width="22" height="22" src="https://theovan.cn/爱心.png" />
+    <span>
+      <!-- <p class="extra-info">Sponsor for me</p> -->
+      <p class="heading">为我赞助</p>
+      <!-- <p class="extra-info">Sponsor now!</p> -->
     </span>
   </a>
 </template>
@@ -105,8 +137,8 @@ const asideSponsors = computed(() => {
   justify-content: center;
   width: 100%;
   gap: 1rem;
-  background-color: var(--vp-c-bg-alt);
-  border: 2px solid var(--vp-c-bg-alt);
+  background-color: var(--vp-c-bg-soft);
+  border: 2px solid var(--vp-c-bg-soft);
   transition: border-color 0.5s;
 }
 
@@ -138,18 +170,50 @@ const asideSponsors = computed(() => {
   transition: opacity 0.5s;
 }
 
+.banner .extra {
+  color: var(--vp-c-text-3);
+  /* opacity: 0; */
+  font-size: 0.7rem;
+  padding-left: 0.1rem;
+  /* transition: opacity 0.5s; */
+}
+
 .banner .heading {
-  background-image: linear-gradient(120deg, var(--vp-c-brand-3) 32%, var(--vp-c-brand-2), var(--vp-c-brand-1));
+  background-image: linear-gradient(
+    120deg,
+    var(--vp-c-brand-3) 32%,
+    var(--vp-c-brand-2),
+    var(--vp-c-brand-1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner .Activity {
+  background-image: linear-gradient(120deg, #b047ff 16%, #646cff, #747bff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .banner.mp .heading {
-  background-image: linear-gradient(120deg, var(--vp-c-brand-3) 32%, var(--vp-c-brand-2), var(--vp-c-brand-1));
+  background-image: linear-gradient(
+    120deg,
+    var(--vp-c-brand-3) 32%,
+    var(--vp-c-brand-2),
+    var(--vp-c-brand-1)
+  );
+}
+
+.banner.mp .Activity {
+  background-image: linear-gradient(120deg, #b047ff 16%, #646cff, #747bff);
 }
 
 .banner:hover .extra-info {
+  opacity: 0.9;
+}
+
+.banner:hover .extra {
   opacity: 0.9;
 }
 </style>

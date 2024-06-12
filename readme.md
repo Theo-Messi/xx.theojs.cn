@@ -1,11 +1,11 @@
 ## 提交书籍
 
-1. [Fork](https://github.com/Theo-messi/Metaphysical-Book/fork) 我的仓库 并为我提出 [Pull Request](https://github.com/Theo-messi/Metaphysical-Book/pulls)
+1. [Fork](https://github.com/Theo-messi/xx.theovan.cn/fork) 我的仓库 并为我提出 [Pull Request](https://github.com/Theo-messi/xx.theovan.cn/pulls)
 2. 或者 [请用邮件传送给我](mailto:fanxiaobin422@gmail.com)
 
 ## 纠正错误
 
-[请在这里提出 issues](https://github.com/Theo-messi/Metaphysical-Book/issues) | [或者请给我发邮件](mailto:fanxiaobin422@gmail.com)
+[请在这里提出 issues](https://github.com/Theo-messi/xx.theovan.cn/issues) | [或者请给我发邮件](mailto:fanxiaobin422@gmail.com)
 
 ## 本地安装与提交格式注意事项
 
