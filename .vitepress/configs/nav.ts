@@ -12,5 +12,5 @@ export const nav: DefaultTheme.Config['nav'] = [
   { text: '灵宠', link: '灵宠/宠物篇', activeMatch: '/灵宠/' },
   { text: '相关经典', link: '相关经典/道德经', activeMatch: '/相关经典/' },
   { text: '提交书籍与纠错', link: '提交书籍与纠错', activeMatch: '/提交书籍与纠错/' },
-  { text: '服务推荐', link: 'https://theovan.xyz/serve/sharing/Account-sharing-guide' }
+  { text: '服务推荐', link: 'https://theovan.cn/serve/sharing/Account-sharing-guide' }
 ]
