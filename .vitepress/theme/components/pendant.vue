@@ -64,7 +64,7 @@ const asideSponsors = computed(() => {
       <p class="extra-info">转存观看!</p>
     </span>
   </a>
-  <a class="banner mp" href="https://theovan.xyz/serve/sharing/Account-sharing-guide" target="_blank">
+  <a class="banner mp" href="https://theovan.cn/serve/sharing/Account-sharing-guide" target="_blank">
     <img width="22" height="22" src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png" />
     <span>
       <p class="extra-info">流媒体账号合租</p>
