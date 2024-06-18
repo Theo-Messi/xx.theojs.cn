@@ -49,7 +49,7 @@ const asideSponsors = computed(() => {
   </a>
 
   <a class="banner mp" href="https://theovan.cn/" target="_blank">
-    <img width="22" height="22" src="https://m.theovan.cn/avatar.png" />
+    <img width="22" height="22" src="https://i.theovan.cn/avatar.png" />
     <span>
       <p class="extra-info">流媒体观影</p>
       <p class="heading">Theo-Docs</p>
@@ -57,7 +57,7 @@ const asideSponsors = computed(() => {
     </span>
   </a>
   <a class="banner mp" href="https://share.theovan.cn/" target="_blank">
-    <img width="22" height="22" src="https://m.theovan.cn/docs/202405101119004.png" />
+    <img width="22" height="22" src="https://i.theovan.cn/docs/202405101119004.png" />
     <span>
       <p class="extra-info">快速获取热门影视资源</p>
       <p class="heading">阿里云盘资源分享</p>
