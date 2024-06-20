@@ -48,7 +48,7 @@ const asideSponsors = computed(() => {
     </span>
   </a>
 
-  <a class="banner mp" href="https://theovan.cn/" target="_blank">
+  <a class="banner mp" href="https://doc.theovan.cn/" target="_blank">
     <img width="22" height="22" src="https://i.theovan.cn/avatar.png" />
     <span>
       <p class="extra-info">流媒体观影</p>
@@ -64,7 +64,7 @@ const asideSponsors = computed(() => {
       <p class="extra-info">转存观看!</p>
     </span>
   </a>
-  <a class="banner mp" href="https://theovan.cn/serve/sharing/Account-sharing-guide" target="_blank">
+  <a class="banner mp" href="https://doc.theovan.cn/serve/sharing/Account-sharing-guide" target="_blank">
     <img width="22" height="22" src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png" />
     <span>
       <p class="extra-info">流媒体账号合租</p>
@@ -73,7 +73,7 @@ const asideSponsors = computed(() => {
     </span>
   </a>
   <a class="banner mp" href="https://github.com/sponsors/Theo-messi" target="_blank">
-    <img width="22" height="22" src="https://theovan.cn/爱心.png" />
+    <img width="22" height="22" src="https://doc.theovan.cn/爱心.png" />
     <span>
       <!-- <p class="extra-info">Sponsor for me</p> -->
       <p class="heading">为我赞助</p>

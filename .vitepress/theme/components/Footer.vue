@@ -49,22 +49,24 @@
         <div class="mb2 fw6 f14">观影指南</div>
         <ul>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/Netflix-guide">Netflix</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/Netflix-guide">Netflix</a>
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/Disney-introduce">Disney+</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/Disney-introduce"
+              >Disney+</a
+            >
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/Spotify">Spotify Premium</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/Spotify">Spotify Premium</a>
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/YouTube">YouTube Premium</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/YouTube">YouTube Premium</a>
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/Hulu">Hulu</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/Hulu">Hulu</a>
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/streaming/HBO-Max">HBO Max</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/streaming/HBO-Max">HBO Max</a>
           </li>
         </ul>
       </div>
@@ -73,7 +75,7 @@
         <div class="mb2 fw6 f14">相关链接</div>
         <ul>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://theovan.cn/">Theo-Docs</a>
+            <a class="external-link" target="_blank" href="https://doc.theovan.cn/">Theo-Docs</a>
           </li>
           <li class="mb2">
             <a class="external-link" target="_blank" href="https://xx.theovan.cn/">玄学宝典</a>
@@ -90,8 +92,8 @@
 
     <!-- 底部信息栏 -->
     <div class="flex" style="display: inline-block">
-      <span class="ml1"><a target="_blank" href="https://theovan.cn/">鄂ICP备2024060426号</a></span>
-      <!-- <span class="ml1">粤公网安备<a target="_blank" href="https://theovan.cn/">44030002000001号</a></span> -->
+      <span class="ml1"><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2024060426号</a></span>
+      <!-- <span class="ml1">粤公网安备<a target="_blank" href="https://doc.theovan.cn/">44030002000001号</a></span> -->
     </div>
     <div class="flex ma4" style="display: inline-block">
       <span class="ml1">
