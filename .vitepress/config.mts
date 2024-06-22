@@ -18,7 +18,7 @@ export default defineConfig({
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
 
   //'force-dark'强制开启深色模式 false强制开启浅色模式
-  appearance: 'force-dark',
+  // appearance: 'force-dark',
 
   // 站点地图
   sitemap: {

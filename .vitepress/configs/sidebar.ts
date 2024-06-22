@@ -53,6 +53,7 @@ export function Side_Yi() {
       base: '/医/',
       items: [
         { text: '八段锦', link: '八段锦' },
+        { text: '五脏排毒法', link: '五脏排毒法' },
         { text: '濒湖脉学', link: '濒湖脉学' },
         { text: '褚氏遗书', link: '褚氏遗书' },
         { text: '发微论', link: '发微论' },
