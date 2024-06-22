@@ -6,7 +6,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   // 导航栏设置
   { text: '山', link: '山/博山篇', activeMatch: '/山/' },
   { text: '医', link: '医/八段锦', activeMatch: '/医/' },
-  { text: '命', link: '命/八字案例分析', activeMatch: '/命/' },
+  { text: '命', link: '命/生辰八字', activeMatch: '/命/' },
   { text: '相', link: '相/冰鉴', activeMatch: '/相/' },
   { text: '卜', link: '卜/毕法赋', activeMatch: '/卜/' },
   { text: '灵宠', link: '灵宠/宠物篇', activeMatch: '/灵宠/' },
