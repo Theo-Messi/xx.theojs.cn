@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-alt f12 lh-normal" style="text-align: center; margin: 0 auto">
+  <footers class="bg-alt f12 lh-normal" style="text-align: center; margin: 0 auto">
     <div class="flex flex-grow-1 ma4" style="display: flex; justify-content: center; width: 100%">
       <!-- GitHub Source -->
       <div class="fb6">
@@ -17,7 +17,7 @@
             >
           </li>
           <li class="mb2">
-            <a class="external-link" target="_blank" href="https://github.com/Theo-messi/own-rules">自用 Clash 配置</a>
+            <a class="external-link" target="_blank" href="https://github.com/Theo-Messi/dotfiles">常用配置文件</a>
           </li>
         </ul>
       </div>
@@ -101,19 +101,19 @@
         <a target="_blank" href="https://github.com/Theo-messi">Theo-Messi</a>. All Rights Reserved
       </span>
     </div>
-  </footer>
+  </footers>
 </template>
 <style>
 /* 页脚 */
-footer {
+footers {
   width: 100%;
 }
 
-footer a:hover {
-  text-decoration: underline;
+footers a:hover {
+  text-decoration: underline dotted;
 }
 
-.has-sidebar ~ footer {
+.has-sidebar ~ footers {
   display: none;
 }
 

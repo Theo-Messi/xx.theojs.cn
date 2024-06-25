@@ -160,7 +160,7 @@ html.dark .DocSearch {
 }
 
 .vp-doc a {
-  text-decoration: none;
+  text-decoration: underline dotted;
 }
 .vp-doc a:hover {
   text-decoration: underline;
