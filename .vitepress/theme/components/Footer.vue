@@ -1,5 +1,5 @@
 <template>
-  <footers class="bg-alt f12 lh-normal" style="text-align: center; margin: 0 auto">
+  <footer class="bg-alt f12 lh-normal" style="text-align: center; margin: 0 auto">
     <div class="flex flex-grow-1 ma4" style="display: flex; justify-content: center; width: 100%">
       <!-- GitHub Source -->
       <div class="fb6">
@@ -92,48 +92,54 @@
 
     <!-- 底部信息栏 -->
     <div class="flex" style="display: inline-block">
-      <span class="ml1"><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2024060426号</a></span>
-      <span class="ml1"><a target="_blank" href="https://beian.mps.gov.cn/">粤公网安备44200102445439号</a></span>
+      <span class="ml1">
+        <a target="_blank" href="https://beian.miit.gov.cn/">
+          <i class="fas fa-earth-americas" style="margin-right: 4px"></i>鄂ICP备2024060426号</a
+        >
+      </span>
+      <span class="ml1">
+        <a target="_blank" href="https://beian.mps.gov.cn/">
+          <i class="fas fa-shield" style="margin-right: 4px"></i>粤公网安备44200102445439号</a
+        >
+      </span>
     </div>
     <div class="flex ma4" style="display: inline-block">
       <span class="ml1">
-        Copyright © 2019 - {{ new Date().getFullYear() }}
+        Copyright <i class="far fa-copyright"></i> 2019 - {{ new Date().getFullYear() }}
         <a target="_blank" href="https://github.com/Theo-messi">Theo-Messi</a>. All Rights Reserved
       </span>
     </div>
-  </footers>
+  </footer>
 </template>
-<style>
+<style lang="scss" scoped>
 /* 页脚 */
-footers {
+footer {
   width: 100%;
-}
 
-footers a:hover {
-  text-decoration: underline dotted;
-}
+  a:hover {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
 
-.has-sidebar ~ footers {
-  display: none;
+  .has-sidebar ~ & {
+    display: none;
+  }
 }
 
 .external-link {
   position: relative;
   display: inline-block;
   padding-right: 10px;
-}
 
-.external-link::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 1px;
-  right: 0;
-  background-color: var(--vp-c-text-3);
-  mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="24px" viewBox="0 0 24 24" width="24px" class="vt-link-icon"%3E%3Cpath d="M0 0h24v24H0V0z" fill="none"%3E%3C/path%3E%3Cpath d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"%3E%3C/path%3E%3C/svg%3E');
-  mask-size: contain;
-  mask-repeat: no-repeat;
+  &::after {
+    content: '\f061';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.5rem;
+    position: absolute;
+    color: var(--vp-c-text-3);
+    transform: rotate(-45deg);
+  }
 }
 
 .bg-alt {
@@ -146,18 +152,20 @@ footers a:hover {
 
 .flex {
   display: flex;
-}
 
-.flex-grow-1 {
-  flex-grow: 1;
+  &-grow-1 {
+    flex-grow: 1;
+  }
 }
 
 .ma4 {
   margin: 1.5rem;
 }
+
 .ma2 {
   margin: 1rem;
 }
+
 .ml0 {
   margin-left: 0.5rem;
 }
@@ -165,6 +173,7 @@ footers a:hover {
 .ml1 {
   margin-left: 1rem;
 }
+
 .mb2 {
   margin-bottom: 0.5rem;
 }
@@ -190,12 +199,13 @@ footers a:hover {
     display: flex;
   }
 }
+
 @media screen and (max-width: 768px) {
   .ma4 {
     margin-left: auto; /* 左边距自动 */
     margin-right: auto; /* 右边距自动 */
     width: 100%; /* 宽度100% */
-    max-width: 95%; /* 最大宽度为屏幕宽度的70% */
+    max-width: 95%; /* 最大宽度为屏幕宽度的95% */
   }
 }
 </style>
