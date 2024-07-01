@@ -7,14 +7,14 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "@vercel/analytics": "^1.3.1",
     "markdown-it-footnote": "^4.0.0",
     "prettier": "^3.3.2",
     "sass": "^1.77.6",
     "vitepress": "^1.2.3",
     "vitepress-plugin-google-analytics": "^1.0.2",
-    "vue": "^3.4.30"
+    "vue": "^3.4.31"
   },
   "devDependencies": {
     "@nolebase/vitepress-plugin-git-changelog": "^2.2.0"
