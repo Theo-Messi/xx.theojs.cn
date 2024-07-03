@@ -5,14 +5,24 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 export const head: HeadConfig[] = [
   // 设置图标
   ['link', { rel: 'icon', href: 'https://i.theovan.cn/avatar.png' }],
-  // 设置主题颜色
+  ['meta', { name: 'msapplication-TileColor', content: '#da532c' }],
   ['meta', { name: 'theme-color', content: '#5f67ee' }],
-  // 设置OG类型
   ['meta', { name: 'og:type', content: 'website' }],
-  // 设置OG语言
   ['meta', { name: 'og:locale', content: 'zh-CN' }],
-  // 设置OG站点名称
   ['meta', { name: 'og:site_name', content: '玄学宝典' }],
-  // 设置OG图片
-  ['meta', { name: 'og:image', content: 'https://i.theovan.cn/avatar.png' }]
+  ['meta', { name: 'og:image', content: 'https://i.theovan.cn/avatar.png' }],
+  ['meta', { name: 'author', content: 'Theo-Messi' }],
+  ['meta', { name: 'copyright', content: 'Theo-Messi' }],
+  ['meta', { name: 'robots', content: 'index, follow' }],
+  ['meta', { name: 'evisit-after', content: '1 day' }],
+  [
+    'meta',
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1, maximum-scale=1'
+    }
+  ],
+  ['meta', { name: 'format-detection', content: 'telephone=no' }],
+  ['meta', { name: 'description', content: '中华传统五术书籍传世经典著作' }],
+  ['meta', { name: 'og:description', content: '中华传统五术书籍传世经典著作' }]
 ]

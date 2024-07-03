@@ -3,43 +3,27 @@
     <a
       v-for="(item, index) in items"
       :key="item.name + index"
-      class="link custom-link"
+      class="link"
       :href="item.link"
       :name="item.name"
       :title="item.name"
       target="_blank"
     >
-      <span class="box">
-        <img
-          v-if="item.icon && isImage(item.icon)"
-          :src="item.icon"
-          alt="Icon"
-          class="icon"
-        />
-        <i
-          v-else-if="item.icon"
-          :class="item.icon + ' fa-2xl icon'"
-          :style="{ color: item.color }"
-        ></i>
-        <i
-          v-else-if="!item.light && !item.dark"
-          class="fas fa-arrow-up-right-from-square fa-lg fa-icon"
-        ></i>
-        <img
-          v-if="item.light"
-          :src="item.light"
-          alt="icon"
-          class="icon light-only"
-        />
-        <img
-          v-if="item.dark"
-          :src="item.dark"
-          alt="icon"
-          class="icon dark-only"
-        />
+      <span v-if="isImage(item.icon)">
+        <img :src="item.icon" alt="icon" class="img" />
       </span>
-
+      <span v-else class="icon">
+        <i :class="item.icon + ' fa-2xl'" :style="{ color: item.color }"></i>
+      </span>
+      <img
+        v-if="item.light"
+        :src="item.light"
+        alt="icon"
+        class="img light-only"
+      />
+      <img v-if="item.dark" :src="item.dark" alt="icon" class="img dark-only" />
       <span class="name">{{ item.name }}</span>
+      <span class="secondary">{{ item.secondary }}</span>
     </a>
   </div>
 </template>
@@ -48,17 +32,18 @@
 import { defineComponent } from 'vue'
 
 interface Item {
+  icon: string
   name: string
   link: string
   target: string
+  secondary: string
   color: string
-  icon?: string
   light?: string
   dark?: string
 }
 
 export default defineComponent({
-  name: 'Links',
+  name: 'BoxCube',
   props: {
     items: {
       type: Array as () => Item[],
@@ -66,13 +51,13 @@ export default defineComponent({
       validator: (items: Item[]) => {
         return items.every(
           (item) =>
+            item.hasOwnProperty('icon') &&
             item.hasOwnProperty('name') &&
             item.hasOwnProperty('link') &&
             item.hasOwnProperty('target') &&
+            item.hasOwnProperty('secondary') &&
             item.hasOwnProperty('color') &&
-            (item.hasOwnProperty('icon') ||
-              item.hasOwnProperty('light') ||
-              item.hasOwnProperty('dark'))
+            (item.hasOwnProperty('light') || item.hasOwnProperty('dark'))
         )
       }
     }
@@ -96,57 +81,55 @@ export default defineComponent({
 :root:is(.dark) .light-only {
   display: none;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 1rem;
 }
 
 .link {
-  width: 100%;
-  height: 3rem;
+  margin-top: 1rem;
+  width: 7.5rem;
+  height: 7.5rem;
   border: 1px solid var(--vp-c-bg-soft);
   background-color: var(--vp-c-bg-alt);
   border-radius: 0.8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  text-decoration: none !important;
 
   &:hover {
     border-color: var(--vp-c-brand-1);
+    .name {
+      color: var(--vp-c-brand-1);
+    }
   }
-}
-
-.box {
-  position: relative;
-  &:hover .icon,
-  .name {
-    color: var(--vp-c-brand-1);
-  }
-}
-
-.icon-only {
-  width: 2rem;
-  margin-left: 1.5rem;
-  margin-top: -1.5rem;
 }
 
 .icon {
-  width: 2rem;
-  margin-left: 1.5rem;
+  margin-top: -1rem;
+  color: var(--vp-c-text-1);
 }
 
-.fa-icon {
+.img {
   width: 2rem;
-  margin-left: 1.5rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
 }
 
 .name {
+  position: absolute;
   font-size: 0.87rem;
-  margin-left: 1rem;
+  bottom: 1.25rem;
+  color: var(--vp-c-text-1);
+}
+
+.secondary {
+  position: absolute;
+  font-size: 0.75rem;
+  bottom: 0.15rem;
+  color: var(--vp-c-text-3);
 }
 </style>

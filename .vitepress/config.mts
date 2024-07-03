@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
 import footnote_plugin from 'markdown-it-footnote'
-import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
@@ -49,12 +52,16 @@ export default defineConfig({
       alias: [
         {
           find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(new URL('./theme/components/Footer.vue', import.meta.url))
+          replacement: fileURLToPath(
+            new URL('./theme/components/Footer.vue', import.meta.url)
+          )
         }
       ]
     },
     plugins: [
-      GitChangelog({ repoURL: () => 'https://github.com/Theo-messi/xx.theovan.cn' }),
+      GitChangelog({
+        repoURL: () => 'https://github.com/Theo-messi/xx.theovan.cn'
+      }),
       GitChangelogMarkdownSection()
     ]
   },
@@ -81,7 +88,8 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern: 'https://github.com/Theo-messi/xx.theovan.cn/blob/main/src/:path',
+      pattern:
+        'https://github.com/Theo-messi/xx.theovan.cn/blob/main/src/:path',
       text: '为此页提供修改建议'
     },
 
