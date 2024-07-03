@@ -1,48 +1,80 @@
 <template>
   <div class="box-container">
-    <a v-for="(item, index) in items" :key="index" :href="item.l" class="box" target="_blank">
+    <a
+      v-for="(item, index) in items"
+      :key="index"
+      :href="item.link"
+      :name="item.name"
+      :title="item.name"
+      class="box"
+      target="_blank"
+    >
       <div class="box-content">
-        <span v-if="item.ct" class="ct">{{ item.ct }}</span>
-        <span v-if="isImage(item.i)" class="icon-container">
-          <img :src="item.i" alt="icon" class="i" />
+        <span v-if="item.tag" class="tag">{{ item.tag }}</span>
+        <span v-if="isImage(item.icon)" class="icon-container">
+          <img :src="item.icon" alt="icon" class="icon-container" />
         </span>
-        <span v-else class="icon-container">
-          <i :class="item.i + ' fa-2xl'" :style="{ color: item.color }"></i>
+        <span v-else class="icon">
+          <i :class="item.icon + ' fa-2xl'" :style="{ color: item.color }"></i>
         </span>
-        <img v-if="item.light" :src="item.light" alt="icon" class="i light-only" />
-        <img v-if="item.dark" :src="item.dark" alt="icon" class="i dark-only" />
-        <p class="t">{{ item.t }}</p>
+        <img
+          v-if="item.light"
+          :src="item.light"
+          alt="icon"
+          class="icon-container light-only"
+        />
+        <img
+          v-if="item.dark"
+          :src="item.dark"
+          alt="icon"
+          class="icon-container dark-only"
+        />
+        <p class="name">{{ item.name }}</p>
       </div>
     </a>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+interface Item {
+  link: string
+  icon: string
+  name: string
+  tag?: string
+  light?: string
+  dark?: string
+  color?: string
+}
+
+export default defineComponent({
   name: 'Box',
   props: {
     items: {
-      type: Array,
+      type: Array as () => Item[],
       required: true,
-      validator: (items) => {
-        // 验证每个项是否有必须的属性
+      validator: (items: Item[]) => {
         return items.every(
           (item) =>
-            item.hasOwnProperty('l') &&
-            item.hasOwnProperty('i') &&
-            item.hasOwnProperty('t') &&
-            item.hasOwnProperty('ct') &&
+            item.hasOwnProperty('link') &&
+            item.hasOwnProperty('icon') &&
+            item.hasOwnProperty('name') &&
+            (item.hasOwnProperty('tag') || true) &&
             (item.hasOwnProperty('light') || item.hasOwnProperty('dark'))
         )
       }
     }
   },
   methods: {
-    isImage(url) {
-      return typeof url === 'string' && /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/.test(url)
+    isImage(url: string): boolean {
+      return (
+        typeof url === 'string' &&
+        /\.(png|jpe?g|gif|svg|webp|bmp|tif?f|tiff|ico)(\?.*)?$/.test(url)
+      )
     }
   }
-}
+})
 </script>
 
 <style lang="scss" scoped>
@@ -65,16 +97,16 @@ export default {
   position: relative;
   border: 1px solid var(--vp-c-bg-soft);
   background-color: var(--vp-c-bg-alt);
-  padding: 12px 24px;
-  border-radius: 8px;
-  height: 60px;
-  width: 210px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  width: 13rem;
+  height: 3.5rem;
   display: flex;
+  text-decoration: none !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   &:hover {
     border-color: var(--vp-c-brand-1);
-    // background-color: var(--vp-c-brand-soft);
   }
 
   @media (max-width: 1024px) {
@@ -89,7 +121,7 @@ export default {
 }
 
 .box-content {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1;
   letter-spacing: -0.02em;
   display: flex;
@@ -99,38 +131,38 @@ export default {
   white-space: nowrap;
 }
 
-.ct {
+.tag {
   position: absolute;
   top: 0;
   right: 0;
   background-color: var(--vp-c-brand-3);
   color: var(--vp-c-brand-text);
-  font-size: 10px;
-  padding: 4px 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 4px;
+  font-size: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
   z-index: 1;
 }
 
-.i {
-  margin-right: 8px;
+.icon-container {
   height: 2em;
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
 }
 
-.icon-container {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  margin-right: 8px;
+.icon {
+  display: inline-block;
+  height: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--vp-c-text-1);
 }
 
-.t {
-  font-size: 14px;
+.name {
+  margin-left: 1rem;
+  font-size: 0.87rem;
   line-height: 1;
   letter-spacing: -0.02em;
   display: flex;

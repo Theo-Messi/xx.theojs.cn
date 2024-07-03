@@ -12,7 +12,13 @@
     </span>
   </a> -->
 
-  <a class="banner mp" href="https://doc.theovan.cn/" target="_blank">
+  <a
+    class="banner mp"
+    href="https://doc.theovan.cn/"
+    name="Theo-Docs"
+    title="Theo-Docs"
+    target="_blank"
+  >
     <img width="22" height="22" src="https://i.theovan.cn/avatar.png" />
     <span>
       <p class="extra-info">流媒体观影</p>
@@ -20,23 +26,49 @@
       <p class="extra-info">一站式服务</p>
     </span>
   </a>
-  <a class="banner mp" href="https://share.theovan.cn/" target="_blank">
-    <img width="22" height="22" src="https://i.theovan.cn/docs/202405101119004.png" />
+  <a
+    class="banner mp"
+    href="https://share.theovan.cn/"
+    name="阿里云盘资源分享"
+    title="阿里云盘资源分享"
+    target="_blank"
+  >
+    <img
+      width="22"
+      height="22"
+      src="https://i.theovan.cn/docs/202405101119004.png"
+    />
     <span>
       <p class="extra-info">快速获取热门影视资源</p>
       <p class="heading">阿里云盘资源分享</p>
       <p class="extra-info">转存观看!</p>
     </span>
   </a>
-  <a class="banner mp" href="https://doc.theovan.cn/serve/sharing/Account-sharing-guide" target="_blank">
-    <img width="22" height="22" src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png" />
+  <a
+    class="banner mp"
+    href="https://doc.theovan.cn/serve/sharing/Account-sharing-guide"
+    name="流媒体帐号合租"
+    title="流媒体帐号合租"
+    target="_blank"
+  >
+    <img
+      width="22"
+      height="22"
+      src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png"
+    />
     <span>
       <p class="extra-info">流媒体账号合租</p>
       <p class="heading">流媒体帐号合租</p>
       <p class="extra-info">共享车位</p>
     </span>
   </a>
-  <a class="banner mp" href="https://github.com/sponsors/Theo-messi" target="_blank">
+  <a
+    class="banner mp"
+    href="https://github.com/sponsors/Theo-Messi"
+    name="赞助"
+    title="赞助"
+    target="_blank"
+  >
     <img width="22" height="22" src="https://doc.theovan.cn/爱心.png" />
     <span>
       <!-- <p class="extra-info">Sponsor for me</p> -->
@@ -45,6 +77,15 @@
     </span>
   </a>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'BannerComponent',
+  setup() {}
+})
+</script>
 
 <style lang="scss" scoped>
 .VPDocAsideSponsors {
@@ -119,7 +160,12 @@
   }
 
   .heading {
-    background-image: linear-gradient(120deg, var(--vp-c-brand-3) 32%, var(--vp-c-brand-2), var(--vp-c-brand-1));
+    background-image: linear-gradient(
+      120deg,
+      var(--vp-c-brand-3) 32%,
+      var(--vp-c-brand-2),
+      var(--vp-c-brand-1)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

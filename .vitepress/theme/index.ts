@@ -5,6 +5,7 @@ import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
 import Box from './components/Box.vue'
 import Links from './components/Links.vue'
+import BoxCube from './components/BoxCube.vue'
 import AsideLogo from './components/AsideLogo.vue'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
@@ -25,18 +26,25 @@ export default {
     googleAnalytics({ id: 'G-5SHLV23EGQ' })
     app.component('Box', Box)
     app.component('Links', Links)
+    app.component('BoxCube', BoxCube)
     app.use(NolebaseGitChangelogPlugin, {
       mapAuthors: [
         {
           name: 'Theo',
           username: 'Theo-messi',
           mapByNameAliases: ['Theo', 'vanhiupun'],
-          mapByEmailAliases: ['fanxiaobin422@gmail.com', 'fanxiaobin422@sina.com', '771720405@qq.com']
+          mapByEmailAliases: [
+            'fanxiaobin422@gmail.com',
+            'fanxiaobin422@sina.com',
+            '771720405@qq.com'
+          ]
         },
         {
           name: 'dependabot',
           username: 'dependabot',
-          mapByEmailAliases: ['49699333+dependabot[bot]@users.noreply.github.com']
+          mapByEmailAliases: [
+            '49699333+dependabot[bot]@users.noreply.github.com'
+          ]
         }
       ]
     })
