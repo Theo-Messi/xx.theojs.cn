@@ -1,0 +1,18 @@
+[build.environment]
+  NODE_VERSION = "20"
+
+[build]
+  publish = ".vitepress/dist"
+  command = "pnpm build"
+
+[[redirects]]
+  from = "https://xx.theovan.xyz"
+  to = "https://xx.theovan.cn"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://xx.theovan.wiki"
+  to = "https://xx.theovan.cn"
+  status = 301
+  force = true
