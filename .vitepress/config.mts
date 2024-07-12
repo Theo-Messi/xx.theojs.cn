@@ -49,7 +49,7 @@ export default defineConfig({
         {
           find: /^.*\/VPFooter\.vue$/,
           replacement: fileURLToPath(
-            new URL('./theme/components/Footer.vue', import.meta.url)
+            new URL('./theme/components/HomeFooter.vue', import.meta.url)
           )
         }
       ]

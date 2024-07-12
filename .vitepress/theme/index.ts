@@ -1,30 +1,31 @@
 // .vitepress/theme/index.ts */
 import DefaultTheme from 'vitepress/theme'
-import { inject } from '@vercel/analytics'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
-import Box from './components/Box.vue'
-import Links from './components/Links.vue'
-import BoxCube from './components/BoxCube.vue'
-import AsideLogo from './components/AsideLogo.vue'
+import {
+  DocBox,
+  DocLinks,
+  DocBoxCube,
+  DocAsideLogo,
+  HomeUnderline
+} from './components'
 
 import './styles/index.scss'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@fortawesome/fontawesome-free/css/all.css'
-inject()
 
 // 导出默认主题
 export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'aside-ads-before': () => h(AsideLogo)
+      'aside-ads-before': () => h(DocAsideLogo)
     })
   },
   enhanceApp: ({ app }, ctx) => {
     googleAnalytics({ id: 'G-5SHLV23EGQ' })
-    app.component('Box', Box)
-    app.component('Links', Links)
-    app.component('BoxCube', BoxCube)
+    app.component('Home', HomeUnderline)
+    app.component('Box', DocBox)
+    app.component('Links', DocLinks)
+    app.component('BoxCube', DocBoxCube)
   }
 }
