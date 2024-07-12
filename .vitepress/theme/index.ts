@@ -7,7 +7,6 @@ import Box from './components/Box.vue'
 import Links from './components/Links.vue'
 import BoxCube from './components/BoxCube.vue'
 import AsideLogo from './components/AsideLogo.vue'
-import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 
 import './styles/index.scss'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
@@ -27,26 +26,5 @@ export default {
     app.component('Box', Box)
     app.component('Links', Links)
     app.component('BoxCube', BoxCube)
-    app.use(NolebaseGitChangelogPlugin, {
-      mapAuthors: [
-        {
-          name: 'Theo',
-          username: 'Theo-messi',
-          mapByNameAliases: ['Theo', 'vanhiupun'],
-          mapByEmailAliases: [
-            'fanxiaobin422@gmail.com',
-            'fanxiaobin422@sina.com',
-            '771720405@qq.com'
-          ]
-        },
-        {
-          name: 'dependabot',
-          username: 'dependabot',
-          mapByEmailAliases: [
-            '49699333+dependabot[bot]@users.noreply.github.com'
-          ]
-        }
-      ]
-    })
   }
 }
