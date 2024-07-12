@@ -1,0 +1,5 @@
+export { default as DocBox } from './DocBox.vue'
+export { default as DocLinks } from './DocLinks.vue'
+export { default as DocBoxCube } from './DocBoxCube.vue'
+export { default as DocAsideLogo } from './DocAsideLogo.vue'
+export { default as HomeUnderline } from './HomeUnderline.vue'
