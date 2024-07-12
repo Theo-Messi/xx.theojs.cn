@@ -1,10 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
 import footnote_plugin from 'markdown-it-footnote'
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection
-} from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
@@ -57,13 +53,7 @@ export default defineConfig({
           )
         }
       ]
-    },
-    plugins: [
-      GitChangelog({
-        repoURL: () => 'https://github.com/Theo-messi/xx.theovan.cn'
-      }),
-      GitChangelogMarkdownSection()
-    ]
+    }
   },
 
   // 源目录
