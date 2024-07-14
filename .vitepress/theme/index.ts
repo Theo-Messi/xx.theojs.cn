@@ -7,7 +7,8 @@ import {
   DocLinks,
   DocBoxCube,
   DocAsideLogo,
-  HomeUnderline
+  HomeUnderline,
+  BaziConverter
 } from './components'
 
 import './styles/index.scss'
@@ -27,5 +28,6 @@ export default {
     app.component('Box', DocBox)
     app.component('Links', DocLinks)
     app.component('BoxCube', DocBoxCube)
+    app.component('BZ', BaziConverter)
   }
 }

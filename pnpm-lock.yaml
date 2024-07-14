@@ -14,6 +14,9 @@ importers:
       '@types/node':
         specifier: ^20.14.10
         version: 20.14.10
+      lunar-javascript:
+        specifier: ^1.6.12
+        version: 1.6.12
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
@@ -608,6 +611,9 @@ packages:
     resolution: {integrity: sha512-P3b3HJDBtSzsXUl0im2L7gTO5Ubg8mEN6G8qoTS77iXxXX4Hvu4Qj540PZDvQ8V6DmX6iXo98k7Md0Cm1PrLaA==}
     engines: {node: '>=6'}
     hasBin: true
+
+  lunar-javascript@1.6.12:
+    resolution: {integrity: sha512-8BIYt50up4B2ihh0O1MCUh7+y6hDiDRIPp0ubP8KKaA7cIgAi4jD3QvM9OdZj0QNhSvopZPKipLt2Eb9+cLhxw==}
 
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
@@ -1361,6 +1367,8 @@ snapshots:
       needle: 3.3.1
       source-map: 0.6.1
     optional: true
+
+  lunar-javascript@1.6.12: {}
 
   magic-string@0.30.10:
     dependencies:
