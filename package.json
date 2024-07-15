@@ -10,7 +10,7 @@
     "@types/node": "^20.14.10",
     "lunar-javascript": "^1.6.12",
     "markdown-it-footnote": "^4.0.0",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "vitepress": "^1.3.0",
     "vitepress-plugin-google-analytics": "^1.0.2",
