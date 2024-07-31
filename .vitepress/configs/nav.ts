@@ -18,6 +18,6 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: '服务推荐',
-    link: 'https://doc.theovan.cn/serve/sharing/Account-sharing-guide'
+    link: 'https://doc.theojs.cn/serve/sharing/Account-sharing-guide'
   }
 ]

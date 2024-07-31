@@ -6,13 +6,19 @@
   command = "pnpm build"
 
 [[redirects]]
+  from = "https://xx.theovan.cn"
+  to = "https://xx.theojs.cn"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://xx.theovan.xyz"
-  to = "https://xx.theovan.cn"
+  to = "https://xx.theojs.cn"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://xx.theovan.wiki"
-  to = "https://xx.theovan.cn"
+  to = "https://xx.theojs.cn"
   status = 301
   force = true

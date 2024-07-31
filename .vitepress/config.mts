@@ -21,7 +21,7 @@ export default defineConfig({
 
   // 站点地图
   sitemap: {
-    hostname: 'https://xx.theovan.cn'
+    hostname: 'https://xx.theojs.cn'
   },
 
   // markdown-it插件配置
@@ -68,7 +68,7 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // // logo
-    logo: { src: 'https://i.theovan.cn/avatar.png', width: 24, height: 24 },
+    logo: { src: 'https://i.theojs.cn/avatar.png', width: 24, height: 24 },
 
     // 社交链接
     socialLinks,
@@ -78,8 +78,7 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern:
-        'https://github.com/Theo-messi/xx.theovan.cn/blob/main/src/:path',
+      pattern: 'https://github.com/Theo-messi/xx.theojs.cn/blob/main/src/:path',
       text: '为此页提供修改建议'
     },
 
@@ -127,7 +126,7 @@ export default defineConfig({
 
     // 底部信息
     footer: {
-      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/xx.theovan.cn/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
+      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/xx.theojs.cn/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
       copyright: `<font size="2">Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo-Messi</a></br>
       <a href="https://111.com" target="_blank">鄂ICP备2022005864号-2</a>｜<a href="https://111.com" target="_blank">鄂公网安备12011202000677号</a></font size="2">`
     }
