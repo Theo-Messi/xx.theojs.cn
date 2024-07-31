@@ -41,21 +41,21 @@ export default defineComponent({
       //   info2: '年付 64折 优惠码  2461880',
       // },
       {
-        link: 'https://doc.theovan.cn/',
-        icon: 'https://i.theovan.cn/avatar.png',
+        link: 'https://doc.theojs.cn/',
+        icon: 'https://i.theojs.cn/avatar.png',
         name: 'Theo-Docs',
         hide1: '流媒体观影',
         hide2: '一站式服务',
       },
       {
-        link: 'https://share.theovan.cn/',
-        icon: 'https://i.theovan.cn/docs/202405101119004.png',
+        link: 'https://share.theojs.cn/',
+        icon: 'https://i.theojs.cn/docs/202405101119004.png',
         name: '阿里云盘资源分享',
         hide1: '快速获取热门影视资源',
         hide2: '转存观看!',
       },
       {
-        link: 'https://doc.theovan.cn/serve/sharing/Account-sharing-guide',
+        link: 'https://doc.theojs.cn/serve/sharing/Account-sharing-guide',
         icon: 'https://cdn.iconscout.com/icon/free/png-256/free-netflix-2296042-1912001.png',
         name: '流媒体帐号合租',
         hide1: '流媒体账号合租',
@@ -63,7 +63,7 @@ export default defineComponent({
       },
       {
         link: 'https://github.com/sponsors/Theo-Messi',
-        icon: 'https://doc.theovan.cn/爱心.png',
+        icon: 'https://doc.theojs.cn/爱心.png',
         name: '为我赞助',
       },
     ];

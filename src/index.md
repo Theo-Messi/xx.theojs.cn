@@ -6,7 +6,7 @@ hero:
   name: 玄学宝典
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
-  image: https://doc.theovan.cn/index/home.png
+  image: https://doc.theojs.cn/index/home.png
   actions:
     - theme: brand
       text: 开始学习
@@ -22,11 +22,11 @@ hero:
 
     - theme: cta pan
       text: 云盘资源
-      link: https://share.theovan.cn/
+      link: https://share.theojs.cn/
 
     - theme: cta xx
       text: Theo-Docs
-      link: https://doc.theovan.cn
+      link: https://doc.theojs.cn
 
 features:
   - title: 山
