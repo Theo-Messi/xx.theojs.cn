@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
+
 const { frontmatter: fm } = useData()
 </script>
 
@@ -30,6 +31,7 @@ const { frontmatter: fm } = useData()
   transition:
     background-color 0.3s ease,
     transform 0.2s ease;
+
   &:hover {
     border-color: var(--vp-button-alt-hover-border);
     color: var(--vp-button-alt-hover-text);
