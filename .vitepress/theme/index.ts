@@ -8,7 +8,8 @@ import {
   DocBoxCube,
   DocAsideLogo,
   HomeUnderline,
-  BaziConverter
+  BaziConverter,
+  Announcement
 } from './components'
 
 import './styles/index.scss'
@@ -19,6 +20,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
+      'home-hero-info-before': () => h(Announcement),
       'aside-ads-before': () => h(DocAsideLogo)
     })
   },

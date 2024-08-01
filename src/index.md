@@ -7,6 +7,10 @@ hero:
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
   image: https://doc.theojs.cn/index/home.png
+  prelink:
+    title: '🎉 站点迁移至 <u>https://xx.theojs.cn</u><div style="text-align: right; font-weight: bold;"><i class="fas fa-star" style="color: #FFD43B;"></i>Ctrl+D 快速收藏网址</div>'
+    link: https://xx.theojs.cn/
+    target: _blank
   actions:
     - theme: brand
       text: 开始学习
