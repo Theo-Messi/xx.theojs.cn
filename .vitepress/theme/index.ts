@@ -2,17 +2,10 @@
 import DefaultTheme from 'vitepress/theme'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
-import {
-  DocBox,
-  DocLinks,
-  DocBoxCube,
-  DocAsideLogo,
-  HomeUnderline,
-  BaziConverter,
-  Announcement
-} from './components'
+import { DocAsideLogo, HomeUnderline, BaziConverter } from './components'
+import { DocBox, DocLinks, DocBoxCube, Announcement } from 'tmfe/vue'
 
-import './styles/index.scss'
+import 'tmfe/scss/all.scss'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 // 导出默认主题
