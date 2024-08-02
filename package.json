@@ -5,15 +5,34 @@
     "preview": "vitepress preview",
     "prettier": "prettier --write ."
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.6.0",
-    "@types/node": "^22.0.0",
-    "lunar-javascript": "^1.6.12",
-    "markdown-it-footnote": "^4.0.0",
+  "devDependencies": {
     "prettier": "3.3.3",
     "sass": "^1.77.8",
     "vitepress": "1.3.1",
-    "vitepress-plugin-google-analytics": "^1.0.2",
+    "vitepress-plugin-google-analytics": "^1.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@types/node": "^22.0.0",
+    "lint-staged": "^15.2.7",
+    "lunar-javascript": "^1.6.12",
+    "markdown-it-footnote": "^4.0.0",
+    "simple-git-hooks": "^2.11.1",
     "vue": "^3.4.34"
-  }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80,
+    "trailingComma": "none"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "packageManager": "pnpm@9.5.0"
 }
