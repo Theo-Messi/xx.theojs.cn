@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
 import footnote_plugin from 'markdown-it-footnote'
-import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   // 站点名称
@@ -12,7 +11,7 @@ export default defineConfig({
 
   // 网站头部
   head,
-
+  metaChunk: true,
   // 站点介绍
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
 
@@ -45,14 +44,10 @@ export default defineConfig({
   // 插件配置
   vite: {
     resolve: {
-      alias: [
-        {
-          find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(
-            new URL('./theme/components/HomeFooter.vue', import.meta.url)
-          )
-        }
-      ]
+      alias: [{ find: /^.*\/VPFooter\.vue$/, replacement: 'tmfe/Footer' }]
+    },
+    define: {
+      FooterData: JSON.stringify(require('./data/footerData').Footer_Data)
     }
   },
 
@@ -122,13 +117,6 @@ export default defineConfig({
     nav,
 
     // 侧边栏
-    sidebar,
-
-    // 底部信息
-    footer: {
-      message: `<font size="2">Released under the <a href="https://github.com/Theo-messi/xx.theojs.cn/blob/main/License" target="_blank">MIT License</a>.</font size="2">`,
-      copyright: `<font size="2">Copyright © 2019 - ${new Date().getFullYear()} <a href="https://github.com/Theo-messi" target="_blank">Theo-Messi</a></br>
-      <a href="https://111.com" target="_blank">鄂ICP备2022005864号-2</a>｜<a href="https://111.com" target="_blank">鄂公网安备12011202000677号</a></font size="2">`
-    }
+    sidebar
   }
 })

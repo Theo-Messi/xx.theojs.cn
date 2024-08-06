@@ -1,20 +1,27 @@
-// .vitepress/theme/index.ts */
 import DefaultTheme from 'vitepress/theme'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
-import { DocAsideLogo, HomeUnderline, BaziConverter } from './components'
-import { DocBox, DocLinks, DocBoxCube, Announcement } from 'tmfe/vue'
 
-import 'tmfe/scss/all.scss'
-import '@fortawesome/fontawesome-free/css/all.css'
+import 'tmfe/theme'
 
-// 导出默认主题
+import { BaziConverter } from './components'
+import {
+  DocBox,
+  DocLinks,
+  DocBoxCube,
+  Announcement,
+  DocAsideLogo,
+  HomeUnderline
+} from 'tmfe'
+
+import { Aside_Data } from '../data/AsideData'
+
 export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'home-hero-info-before': () => h(Announcement),
-      'aside-ads-before': () => h(DocAsideLogo)
+      'aside-ads-before': () => h(DocAsideLogo, { Aside_Data })
     })
   },
   enhanceApp: ({ app }, ctx) => {
