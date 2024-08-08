@@ -15,7 +15,7 @@
     "lunar-javascript": "^1.6.12",
     "markdown-it-footnote": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
-    "tmfe": "^2.2.5",
+    "@theo-messi/tm-fe": "^2.2.5",
     "vue": "^3.4.35"
   },
   "prettier": {

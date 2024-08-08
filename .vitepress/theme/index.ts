@@ -2,7 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
 
-import 'tmfe/theme'
+import '@theo-messi/tm-fe/theme'
 
 import { BaziConverter } from './components'
 import {
@@ -12,7 +12,7 @@ import {
   Announcement,
   DocAsideLogo,
   HomeUnderline
-} from 'tmfe'
+} from '@theo-messi/tm-fe'
 
 import { Aside_Data } from '../data/AsideData'
 
