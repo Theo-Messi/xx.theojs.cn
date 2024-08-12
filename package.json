@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "prettier": "3.3.3",
-    "vitepress": "1.3.1",
+    "vitepress": "1.3.2",
     "vitepress-plugin-google-analytics": "^1.0.2"
   },
   "dependencies": {
@@ -15,8 +15,8 @@
     "lunar-javascript": "^1.6.12",
     "markdown-it-footnote": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
-    "@theo-messi/tm-fe": "^2.2.5",
-    "vue": "^3.4.35"
+    "@theo-messi/tm-fe": "^2.4.2",
+    "vue": "^3.4.37"
   },
   "prettier": {
     "semi": false,
