@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@theo-messi/tm-fe':
-        specifier: ^2.4.2
-        version: 2.4.2
+      '@theojs/lumen':
+        specifier: ^2.4.5
+        version: 2.4.5
       lint-staged:
         specifier: ^15.2.8
         version: 15.2.8
@@ -293,15 +293,6 @@ packages:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
 
-  '@mdit/plugin-img-size@0.13.0':
-    resolution: {integrity: sha512-3ZpKQkch75WH5//U3GFe0U8z46Oz+lDIlLFzcf8VXuTgNUC9MJ8tnBRVbmv058C4kGPONTv4YrxfL7jsG5zqFg==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.1.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -400,8 +391,8 @@ packages:
   '@shikijs/transformers@1.12.1':
     resolution: {integrity: sha512-zOpj/S2thBvnJV4Ty3EE8aRs/VqCbV+lgtEYeBRkPxTW22uLADEIZq0qjt5W2Rfy2KSu29e73nRyzp4PefjUTg==}
 
-  '@theo-messi/tm-fe@2.4.2':
-    resolution: {integrity: sha512-kifY2dLGZJ0qxcfBEJgnabZIaYkp7iUomfo7B7SgftylK3BkHMqiHsxd64gzhbssi+CD3+lnFRdu2sz1wkeg0w==}
+  '@theojs/lumen@2.4.5':
+    resolution: {integrity: sha512-XdLWLck9B4pKxHeo9tunXltgckPhilkB6RB71GeNIobpfEGUvOJ8V2s1HUgYPdAuV4GCgn8uvj10sggYgy/FWQ==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1427,10 +1418,6 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.1.0
 
-  '@mdit/plugin-img-size@0.13.0':
-    dependencies:
-      '@types/markdown-it': 14.1.2
-
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1499,16 +1486,14 @@ snapshots:
     dependencies:
       shiki: 1.12.1
 
-  '@theo-messi/tm-fe@2.4.2':
+  '@theojs/lumen@2.4.5':
     dependencies:
       '@fortawesome/fontawesome-free': 6.6.0
-      '@mdit/plugin-img-size': 0.13.0
       bumpp: 9.4.2
       sass: 1.77.8
       vue: 3.4.37
     transitivePeerDependencies:
       - magicast
-      - markdown-it
       - typescript
 
   '@types/estree@1.0.5': {}
