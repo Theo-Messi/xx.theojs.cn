@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@theojs/lumen':
-        specifier: ^2.6.2
-        version: 2.6.2
+        specifier: ^2.6.3
+        version: 2.6.3
       lint-staged:
         specifier: ^15.2.9
         version: 15.2.9
@@ -400,8 +400,8 @@ packages:
   '@shikijs/transformers@1.14.1':
     resolution: {integrity: sha512-JJqL8QBVCJh3L61jqqEXgFq1cTycwjcGj7aSmqOEsbxnETM9hRlaB74QuXvY/fVJNjbNt8nvWo0VwAXKvMSLRg==}
 
-  '@theojs/lumen@2.6.2':
-    resolution: {integrity: sha512-152iQIGNr+rHJjLeTE5+7ZpFS2DzqDLVJFatUhGdpUarLVTvHC0kA9kSIG0btj6kMH2dpSgVeY0+wGdIbMwj8Q==}
+  '@theojs/lumen@2.6.3':
+    resolution: {integrity: sha512-C5/wJclWIyDFYhRygIfcz5AWh5TDxiJVQwfPWExQEzkeM2aLs/Q4Wln1VDlkCsr2S8iHlGtE1E2YzeiKZRL8iQ==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1498,7 +1498,7 @@ snapshots:
     dependencies:
       shiki: 1.14.1
 
-  '@theojs/lumen@2.6.2':
+  '@theojs/lumen@2.6.3':
     dependencies:
       '@fortawesome/fontawesome-free': 6.6.0
       bumpp: 9.5.1
