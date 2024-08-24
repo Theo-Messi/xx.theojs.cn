@@ -537,10 +537,7 @@ export function Side_Pr() {
       // text: '提交书籍与纠错',
       // collapsed: true,
       base: '/',
-      items: [
-        { text: '提交书籍与纠错', link: '提交书籍与纠错' },
-        { text: '八字转换器', link: '八字转换器' }
-      ]
+      items: [{ text: '提交书籍与纠错', link: '提交书籍与纠错' }]
     }
   ]
 }
