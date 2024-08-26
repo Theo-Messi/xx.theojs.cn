@@ -10,7 +10,8 @@ import {
   DocBoxCube,
   Announcement,
   DocAsideLogo,
-  HomeUnderline
+  HomeUnderline,
+  HomeFooter
 } from '@theojs/lumen'
 
 import { Aside_Data, Footer_Data } from '../data'
