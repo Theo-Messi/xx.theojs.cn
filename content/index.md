@@ -9,9 +9,8 @@ hero:
   image: https://doc.theojs.cn/index/home.png
 
   prelink:
-    title: '🎉 FlyingBird 双旦活动开启咯!
- </br>月/季/半年付 85折 , 优惠码<span style="color: var(--vp-c-brand-3); font-weight: bold;"> 122485 </span>可重复使用5次</br>年付8折（站内折上折，高达64折 ）<span style="color: var(--vp-c-brand-3); font-weight: bold;"> 122480 </span>可重复使用5次<div><iconify-icon icon="eos-icons:hourglass" style="font-size: 1rem;"></iconify-icon> 活动时间: 即日至 <span style="color: var(--vp-c-brand-3); font-weight: bold;">2025年1月8日23点59分</span></div>'
-    link: https://fbinv02.fbaff.cc/auth/register?code=RZP3
+    title: '🎉 活动不停歇，青云梯四周年双旦特惠 </br>· 月/季/半年付85折 优惠码<span style="color: var(--vp-c-brand-3); font-weight: bold;"> qyt85 </span></br>· 年付以及年付以上8折 优惠码<span style="color: var(--vp-c-brand-3); font-weight: bold;"> qyt80</span></br>· 年付8折/2年付7折/3年付6折 配合优惠码折上折，最高可达<span style="color: var(--vp-c-brand-3); font-weight: bold;">48</span>折<div><iconify-icon icon="eos-icons:hourglass" style="font-size: 1rem;"></iconify-icon> 活动时间: 即日至 <span style="color: var(--vp-c-brand-3); font-weight: bold;">2025年1月7日23点59分</span></div>'
+    link: https://qytcc01.qingyunti.pro/register?aff=jjgD79Jd
     target: _blank
 
   actions:
