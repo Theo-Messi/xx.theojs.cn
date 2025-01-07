@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@mdit/plugin-footnote": "^0.14.0",
-    "@theojs/lumen": "^5.2.1",
+    "@theojs/lumen": "^5.3.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "lint-staged": "^15.3.0",
     "prettier": "3.4.2",
@@ -27,5 +27,5 @@
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"
   },
-  "packageManager": "pnpm@9.15.2"
+  "packageManager": "pnpm@9.15.3"
 }
