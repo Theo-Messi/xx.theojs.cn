@@ -15,8 +15,8 @@
     ]
   },
   "devDependencies": {
-    "@mdit/plugin-footnote": "^0.15.0",
-    "@theojs/lumen": "^5.3.1",
+    "@mdit/plugin-footnote": "^0.16.0",
+    "@theojs/lumen": "^5.3.3",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "lint-staged": "^15.3.0",
     "prettier": "3.4.2",
