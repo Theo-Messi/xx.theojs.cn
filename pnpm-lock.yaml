@@ -37,7 +37,7 @@ importers:
         version: 2.11.1
       vitepress:
         specifier: ^1.6.1
-        version: 1.6.1(@algolia/client-search@5.19.0)(@types/node@22.10.7)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3)
+        version: 1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
@@ -520,9 +520,6 @@ packages:
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/node@22.10.7':
-    resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1352,9 +1349,6 @@ packages:
   ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
-
   unist-util-is@6.0.0:
     resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
 
@@ -1875,20 +1869,15 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@22.10.7':
-    dependencies:
-      undici-types: 6.20.0
-    optional: true
-
   '@types/unist@3.0.3': {}
 
   '@types/web-bluetooth@0.0.20': {}
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@vitejs/plugin-vue@5.2.1(vite@5.4.13(@types/node@22.10.7))(vue@3.5.13(typescript@5.7.3))':
+  '@vitejs/plugin-vue@5.2.1(vite@5.4.13)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
-      vite: 5.4.13(@types/node@22.10.7)
+      vite: 5.4.13
       vue: 3.5.13(typescript@5.7.3)
 
   '@vue/compiler-core@3.5.13':
@@ -2815,9 +2804,6 @@ snapshots:
 
   ufo@1.5.4: {}
 
-  undici-types@6.20.0:
-    optional: true
-
   unist-util-is@6.0.0:
     dependencies:
       '@types/unist': 3.0.3
@@ -2851,16 +2837,15 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.13(@types/node@22.10.7):
+  vite@5.4.13:
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.1
       rollup: 4.31.0
     optionalDependencies:
-      '@types/node': 22.10.7
       fsevents: 2.3.3
 
-  vitepress@1.6.1(@algolia/client-search@5.19.0)(@types/node@22.10.7)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3):
+  vitepress@1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3):
     dependencies:
       '@docsearch/css': 3.8.2
       '@docsearch/js': 3.8.2(@algolia/client-search@5.19.0)(search-insights@2.17.3)
@@ -2869,7 +2854,7 @@ snapshots:
       '@shikijs/transformers': 2.0.3
       '@shikijs/types': 2.0.3
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.2.1(vite@5.4.13(@types/node@22.10.7))(vue@3.5.13(typescript@5.7.3))
+      '@vitejs/plugin-vue': 5.2.1(vite@5.4.13)(vue@3.5.13(typescript@5.7.3))
       '@vue/devtools-api': 7.7.0
       '@vue/shared': 3.5.13
       '@vueuse/core': 12.4.0(typescript@5.7.3)
@@ -2878,7 +2863,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.1.1
       shiki: 2.0.3
-      vite: 5.4.13(@types/node@22.10.7)
+      vite: 5.4.13
       vue: 3.5.13(typescript@5.7.3)
     optionalDependencies:
       postcss: 8.5.1
