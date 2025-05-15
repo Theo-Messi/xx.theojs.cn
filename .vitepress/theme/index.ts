@@ -13,7 +13,6 @@ import {
   HomeUnderline,
   ShareButton,
   Twikoo,
-  googleAnalytics,
   umamiAnalytics
 } from '@theojs/lumen'
 import '@theojs/lumen/theme'
@@ -32,7 +31,6 @@ export default {
     })
   },
   enhanceApp: ({ app }) => {
-    googleAnalytics({ id: 'G-5SHLV23EGQ' })
     umamiAnalytics({
       id: '05d0addd-9215-4b6d-b753-998173044185',
       src: 'https://u.theojs.cn/script.js'
