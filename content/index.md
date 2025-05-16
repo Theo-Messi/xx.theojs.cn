@@ -6,7 +6,13 @@ hero:
   name: 玄学宝典
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
-  image: https://doc.theojs.cn/index/home.webp
+  image: 
+    src: https://doc.theojs.cn/index/home.webp
+    alt: home
+    loading: eager
+    fetchpriority: high
+    width: 320
+    height: 320
 
   prelink:
     # content: '<span class="promo-text" style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/logo/qyt.webp" style="height:0.65em; "/>IPLC纯专线内网传输线路 最高2.5Gbps速率!</span>'
