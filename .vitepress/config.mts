@@ -4,21 +4,21 @@ import llmstxt from 'vitepress-plugin-llms'
 
 import { footnote } from '@mdit/plugin-footnote'
 
-import { head, nav, sidebar, socialLinks } from './configs'
+import { head, nav, sidebar, socialLinks, transformPageData } from './configs'
 
 export default defineConfig({
   // 站点名称
   title: '玄学宝典',
 
   // 站点语言
-  lang: 'zh-CN',
+  lang: 'zh-Hans',
 
   // 网站头部
   head,
   metaChunk: true,
   // 站点介绍
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
-
+  transformPageData,
   //'force-dark'强制开启深色模式 false强制开启浅色模式
   // appearance: 'force-dark',
 
