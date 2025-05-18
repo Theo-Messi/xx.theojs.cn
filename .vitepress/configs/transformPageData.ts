@@ -1,7 +1,7 @@
 import type { UserConfig } from 'vitepress'
 
 const baseUrl = 'https://xx.theojs.cn'
-const imgUrl = 'https://i.theojs.cn/avatar.webp'
+const imgUrl = 'https://i.theojs.cn/logo/avatar-mini.webp'
 
 export const transformPageData: UserConfig['transformPageData'] = (
   pageData
