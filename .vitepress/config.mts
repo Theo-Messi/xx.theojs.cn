@@ -2,8 +2,6 @@ import { defineConfig } from 'vitepress'
 
 import llmstxt from 'vitepress-plugin-llms'
 
-import { footnote } from '@mdit/plugin-footnote'
-
 import { head, nav, sidebar, socialLinks, transformPageData } from './configs'
 
 export default defineConfig({
@@ -48,9 +46,6 @@ export default defineConfig({
       dangerLabel: '危险',
       infoLabel: '信息',
       detailsLabel: '详细信息'
-    },
-    config: (md) => {
-      md.use(footnote)
     }
   },
 
