@@ -2,6 +2,7 @@ import type { UserConfig } from 'vitepress'
 
 const baseUrl = 'https://xx.theojs.cn'
 const imgUrl = 'https://i.theojs.cn/logo/avatar-mini.webp'
+const defaultOgImage = 'https://i.theojs.cn/logo/xx-og.webp'
 
 export const transformPageData: UserConfig['transformPageData'] = (
   pageData
@@ -12,12 +13,28 @@ export const transformPageData: UserConfig['transformPageData'] = (
     .replace(/\.md$/, '')
 
   pageData.frontmatter.head ??= []
+
+  // 过滤掉已有的 canonical 和 JSON-LD script，避免重复
+  pageData.frontmatter.head = pageData.frontmatter.head.filter(
+    (item) =>
+      !(
+        (item[0] === 'link' && item[1]?.rel === 'canonical') ||
+        (item[0] === 'script' && item[1]?.type === 'application/ld+json')
+      )
+  )
+
+  // 添加 canonical 链接
   pageData.frontmatter.head.push([
     'link',
     { rel: 'canonical', href: DynamicUrl }
   ])
 
-  // Json-LD
+  // 提取 og:image，没有则用默认
+  const ogImageEntry = pageData.frontmatter.head.find(
+    (item) => item[0] === 'meta' && item[1]?.property === 'og:image'
+  )
+  const ogImage = ogImageEntry?.[1]?.content || defaultOgImage
+
   const isHome = pageData.relativePath === 'index.md'
   const jsonLd = isHome
     ? {
@@ -44,7 +61,7 @@ export const transformPageData: UserConfig['transformPageData'] = (
     : {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
-        headline: pageData.frontmatter.title || '',
+        headline: pageData.title || '',
         inLanguage: 'zh-Hans',
         author: {
           '@type': 'Person',
@@ -59,14 +76,13 @@ export const transformPageData: UserConfig['transformPageData'] = (
             url: imgUrl
           }
         },
-        mainEntityOfPage: {
-          '@type': 'WebPage',
-          '@id': DynamicUrl
-        },
-        description: pageData.description,
-        url: DynamicUrl
+        mainEntityOfPage: DynamicUrl,
+        description: '中华传统五术书籍传世经典著作',
+        url: DynamicUrl,
+        image: ogImage
       }
 
+  // 添加 JSON-LD
   pageData.frontmatter.head.push([
     'script',
     { type: 'application/ld+json' },
