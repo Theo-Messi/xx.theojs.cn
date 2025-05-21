@@ -1,6 +1,6 @@
 {
-  "name": "玄学宝典",
-  "short_name": "玄学宝典",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "name": "玄学宝典",
+  "short_name": "玄学宝典",
+  "theme_color": "#ffffff"
 }
