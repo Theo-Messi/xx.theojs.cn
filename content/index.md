@@ -39,10 +39,15 @@ hero:
     - theme: brand
       text: ❤️ 成为赞助商
       link: https://i.theojs.cn/sponsor.webp
+      rel: sponsored
 
     - theme: custom-alt
       text: Theo-Docs
       link: https://doc.theojs.cn
+
+    - theme: custom-alt-lumen
+      text: Lumen
+      link: https://lumen.theojs.cn
 
 features:
   - title: 山
