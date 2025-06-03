@@ -2,7 +2,14 @@ import { defineConfig } from 'vitepress'
 
 import llmstxt from 'vitepress-plugin-llms'
 
-import { head, nav, sidebar, socialLinks, transformPageData } from './configs'
+import {
+  head,
+  nav,
+  search,
+  sidebar,
+  socialLinks,
+  transformPageData
+} from './configs'
 
 export default defineConfig({
   // 站点名称
@@ -120,6 +127,9 @@ export default defineConfig({
 
     // 侧边栏
     sidebar,
+
+    //搜索
+    search: { provider: 'algolia', options: search },
 
     // 404
     notFound: {
