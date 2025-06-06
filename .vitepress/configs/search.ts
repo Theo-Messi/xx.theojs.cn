@@ -7,11 +7,11 @@ export const search: DefaultTheme.AlgoliaSearchOptions = {
   insights: true,
   locales: {
     root: {
-      placeholder: '搜索文档',
+      placeholder: '若简体无法搜索到相关内容，请尝试使用繁体',
       translations: {
         button: {
-          buttonText: '搜索文档',
-          buttonAriaLabel: '搜索文档'
+          buttonText: '搜索书籍',
+          buttonAriaLabel: '搜索书籍'
         },
         modal: {
           searchBox: {
@@ -33,9 +33,9 @@ export const search: DefaultTheme.AlgoliaSearchOptions = {
             helpText: '你可能需要检查你的网络连接'
           },
           footer: {
-            selectText: '选择',
-            navigateText: '切换',
-            closeText: '关闭',
+            selectText: '选择条目',
+            navigateText: '切换条目',
+            closeText: '关闭搜索框',
             searchByText: '搜索提供者'
           },
           noResultsScreen: {
