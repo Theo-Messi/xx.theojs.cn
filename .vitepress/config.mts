@@ -34,9 +34,6 @@ export default defineConfig({
 
   // vite配置
   vite: {
-    optimizeDeps: {
-      include: ['recaptcha-v3']
-    },
     plugins: [llmstxt({})]
   },
 
