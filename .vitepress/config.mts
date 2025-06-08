@@ -13,7 +13,6 @@ export default defineConfig({
 
   // 网站头部
   head,
-  metaChunk: true,
   // 站点介绍
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
   transformPageData,
