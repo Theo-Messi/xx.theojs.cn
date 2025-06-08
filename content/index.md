@@ -6,7 +6,7 @@ hero:
   name: 玄学宝典
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
-  image: 
+  image:
     src: https://doc.theojs.cn/index/home.webp
     alt: home
     loading: eager
