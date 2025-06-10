@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import DefaultTheme from 'vitepress/theme'
 
 import { h } from 'vue'
@@ -27,13 +28,11 @@ export default {
     })
   },
   enhanceApp: ({ app }) => {
-    if ((import.meta as any).env.PROD) {
-      umamiAnalytics({
-        id: (import.meta as any).env.VITE_UMAMI_ID,
-        src: (import.meta as any).env.VITE_UMAMI_SRC,
-        domains: 'xx.theojs.cn'
-      })
-    }
+    umamiAnalytics({
+      id: import.meta.env.VITE_UMAMI_ID,
+      src: import.meta.env.VITE_UMAMI_SRC,
+      domains: 'xx.theojs.cn'
+    })
     app.component('Home', HomeUnderline)
     app.component('Pill', DocPill)
     app.component('Box', DocBox)
