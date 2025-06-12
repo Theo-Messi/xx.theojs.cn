@@ -6,7 +6,6 @@ import { h } from 'vue'
 import {
   Announcement,
   DocAsideLogo,
-  DocBox,
   DocBoxCube,
   DocLinks,
   DocPill,
@@ -35,7 +34,6 @@ export default {
     })
     app.component('Home', HomeUnderline)
     app.component('Pill', DocPill)
-    app.component('Box', DocBox)
     app.component('Links', DocLinks)
     app.component('BoxCube', DocBoxCube)
   }
