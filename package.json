@@ -39,7 +39,7 @@
     "vite": "^6.3.5",
     "vitepress": "2.0.0-alpha.6",
     "vitepress-plugin-llms": "^1.5.1",
-    "vue": "^3.5.16"
+    "vue": "^3.5.17"
   },
   "packageManager": "pnpm@10.12.1"
 }
