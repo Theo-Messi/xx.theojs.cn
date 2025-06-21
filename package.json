@@ -25,7 +25,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
-    "@theojs/lumen": "^5.8.0",
+    "@theojs/lumen": "^5.8.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "commitizen": "^4.3.1",
     "cz-vinyl": "^2.5.4",
@@ -39,7 +39,7 @@
     "vite": "^6.3.5",
     "vitepress": "2.0.0-alpha.6",
     "vitepress-plugin-llms": "^1.5.1",
-    "vue": "^3.5.16"
+    "vue": "^3.5.17"
   },
   "packageManager": "pnpm@10.12.1"
 }
