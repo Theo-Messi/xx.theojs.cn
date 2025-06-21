@@ -36,7 +36,5 @@ export const head: HeadConfig[] = [
 
   // SEO 相关设置
   ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
-  ['meta', { name: 'google-site-verification', content: 'bOXLe1lrqePxxyksBSbMgqbELMkTX9Q_FkyEuVwTobI' }],
-
-  ['meta', { name: 'keywords', content: '玄学, 五术, 经典著作, 中华文化, 易经, 风水, 传统文化' }]
+  ['meta', { name: 'google-site-verification', content: 'bOXLe1lrqePxxyksBSbMgqbELMkTX9Q_FkyEuVwTobI' }]
 ]
