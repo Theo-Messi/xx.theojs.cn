@@ -108,7 +108,7 @@ export const Aside_Data: AsideItem = [
   },
   {
     link: 'https://github.com/Theo-Messi/lumen',
-    image: 'https://i.theojs.cn/logo/Lumen-Logo-mini.webp',
+    image: 'https://i.theojs.cn/logo/Lumen-Logo-128.webp',
     alt: '@theojs/Lumen Logo',
     name: '@theojs/Lumen',
     hide1: '主题美化与 Vue 扩展组件库',
@@ -116,7 +116,7 @@ export const Aside_Data: AsideItem = [
   },
   {
     link: 'https://doc.theojs.cn/',
-    image: 'https://i.theojs.cn/logo/avatar-mini.webp',
+    image: 'https://i.theojs.cn/logo/avatar-128.webp',
     alt: 'Theo-Docs Logo',
     name: 'Theo-Docs',
     hide1: '流媒体观影',
