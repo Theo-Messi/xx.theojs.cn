@@ -19,10 +19,11 @@ export default defineConfig({
   //'force-dark'强制开启深色模式 false强制开启浅色模式
   // appearance: 'force-dark',
 
+  // 是否将 meta 信息提取为单独的 chunk
+  metaChunk: true,
+
   // 站点地图
-  sitemap: {
-    hostname: 'https://xx.theojs.cn'
-  },
+  sitemap: { hostname: 'https://xx.theojs.cn' },
 
   // vue配置
   vue: {
