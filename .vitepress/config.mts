@@ -1,7 +1,5 @@
 import { defineConfig } from 'vitepress'
-
 import llmstxt from 'vitepress-plugin-llms'
-
 import { head, nav, search, sidebar, socialLinks, transformPageData } from './configs'
 
 export default defineConfig({
@@ -13,14 +11,21 @@ export default defineConfig({
 
   // 网站头部
   head,
+
   // 站点介绍
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
+
+  // 动态生成 meta 标签和 JSON-LD 数据
   transformPageData,
+
   //'force-dark'强制开启深色模式 false强制开启浅色模式
   // appearance: 'force-dark',
 
   // 是否将 meta 信息提取为单独的 chunk
   metaChunk: true,
+
+  // 禁用页面链接的预加载
+  router: { prefetchLinks: false },
 
   // 站点地图
   sitemap: { hostname: 'https://xx.theojs.cn' },
@@ -88,8 +93,7 @@ export default defineConfig({
 
     // 上次更新
     lastUpdated: {
-      text: '最后更新于',
-      formatOptions: { dateStyle: 'full', timeStyle: 'full', hourCycle: 'h24' }
+      text: '最后更新于'
     },
 
     // 文章翻页
