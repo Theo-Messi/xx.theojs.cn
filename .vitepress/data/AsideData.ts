@@ -110,7 +110,7 @@ export const Aside_Data: AsideItem = [
     name: 'Theo-Docs',
     hide1: '流媒体观影',
     hide2: '一站式服务',
-    link: 'https://xx.theojs.cn/'
+    link: 'https://doc.theojs.cn/'
   },
   {
     icon: { icon: 'cbi:netflix', color: '#E50914' },
