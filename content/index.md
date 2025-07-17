@@ -33,11 +33,6 @@ hero:
       text: 提交书籍与纠错
       link: /提交书籍与纠错
 
-    - theme: brand
-      text: ❤️ 成为赞助商
-      link: https://i.theojs.cn/sponsor.webp
-      rel: sponsored noreferrer
-
     - theme: custom-alt
       text: Theo-Docs
       link: https://doc.theojs.cn
