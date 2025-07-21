@@ -22,17 +22,9 @@ export const head: HeadConfig[] = [
   ['meta', { property: 'og:type', content: 'website' }],
   ['meta', { property: 'og:locale', content: 'zh-Hans' }],
   ['meta', { property: 'og:site_name', content: '玄学宝典' }],
-  ['meta', { property: 'og:title', content: '玄学宝典' }],
-  ['meta', { property: 'og:url', content: 'https://xx.theojs.cn/' }],
-  ['meta', { property: 'og:image', content: 'https://i.theojs.cn/logo/xx-og.webp' }],
-  ['meta', { property: 'og:description', content: '中华传统五术书籍传世经典著作' }],
 
   // Twitter 卡片信息
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-  ['meta', { name: 'twitter:site', content: '@TheoMessi_' }],
-  ['meta', { name: 'twitter:title', content: '玄学宝典' }],
-  ['meta', { name: 'twitter:description', content: '中华传统五术书籍传世经典著作' }],
-  ['meta', { name: 'twitter:image', content: 'https://i.theojs.cn/logo/xx-og.webp' }],
 
   // SEO 相关设置
   ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
