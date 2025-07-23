@@ -33,11 +33,11 @@ hero:
       text: 提交书籍与纠错
       link: /提交书籍与纠错
 
-    - theme: custom-alt
+    - theme: alt author
       text: Theo-Docs
       link: https://doc.theojs.cn
 
-    - theme: custom-alt-lumen
+    - theme: alt logo
       text: Lumen
       link: https://lumen.theojs.cn
 ---
