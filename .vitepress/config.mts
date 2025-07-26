@@ -24,9 +24,6 @@ export default defineConfig({
   // 是否将 meta 信息提取为单独的 chunk
   metaChunk: true,
 
-  // 禁用页面链接的预加载
-  router: { prefetchLinks: false },
-
   // 站点地图
   sitemap: { hostname: 'https://xx.theojs.cn' },
 
