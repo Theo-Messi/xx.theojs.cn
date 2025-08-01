@@ -14,13 +14,12 @@ hero:
     height: 320
 
   Notice:
-    title: '<iconify-icon icon="streamline-emojis:wrapped-gift-2" ></iconify-icon> <span class="promo-title"> 小蜜蜂 618购物狂欢!!! 最低三年48折</span>'
+    title: '<iconify-icon icon="streamline-emojis:wrapped-gift-2"></iconify-icon> <span class="promo-title">TNT Cloud 新人特惠！</span>'
     desc: |
-      · 全套餐推出8折优惠 <span class="promo-text">xmfxmf7</span>
-      · 3年付更可享受 <span class="promo-text">4.8</span>折优惠
-    date: '7月31号23点59分'
-    dateText: '活动截止至'
-    link: https://itheo.top/bee
+      · 全场85折<span class="promo-text"> 优惠码: TNT85 </span>
+    # date: '7月31号23点59分'
+    # dateText: '活动截止至'
+    link: https://itheo.top/tnt
     rel: sponsored noreferrer
 
   actions:
